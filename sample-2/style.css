@@ -1,0 +1,417 @@
+.f13 {
+  font-size: 13px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.f24 {
+  font-size: 24px;
+}
+
+.f38 {
+  font-size: 38px;
+}
+
+.f42 {
+  font-size: 42px;
+}
+
+.bold {
+  font-weight: 400;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.txt-brand {
+  color: #0078BD;
+}
+
+.txt-gray {
+  color: darkgray;
+}
+
+.bg-brand {
+  background-color: #0078BD !important;
+}
+
+.padd-side, .feature, .info, footer div:last-child img {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.padd-side-48 {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.padd-stand {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.padd-stand-48 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#learn-button-big {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, #F5F5F5));
+  background-image: linear-gradient(white 50%, #F5F5F5 50%);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: darkgray;
+  padding: 12px 16px;
+  border-radius: 4px;
+  width: 238px;
+}
+
+#learn-button-big img {
+  position: relative;
+  margin-left: 10px;
+  top: 5px;
+}
+
+.button-small {
+  padding: 8px 16px;
+  background-color: white;
+  display: inline-block;
+}
+
+.master {
+  background-color: #121B2A;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.wrapper-no-overflow {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: #121B2A;
+  position: relative;
+  z-index: 100;
+}
+
+.navigation {
+  overflow: hidden;
+}
+
+.navigation nav {
+  clear: both;
+  margin-top: 24px;
+  float: right;
+}
+
+.navigation ul li {
+  list-style-type: none;
+  float: left;
+}
+
+.navigation ul li a {
+  padding: 8px 0 8px 16px;
+  font-weight: 300;
+}
+
+.navigation ul li a:hover {
+  color: #0078BD;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.auth-link {
+  float: right;
+}
+
+.auth-link a {
+  text-transform: uppercase;
+  float: left;
+}
+
+.hero {
+  position: relative;
+}
+
+.banner-slides {
+  background-image: url("./images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  height: 544px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 544px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgba(5, 5, 10, 0.3)), color-stop(3%, rgba(0, 0, 0, 0)), color-stop(97%, rgba(0, 0, 0, 0)), color-stop(99%, rgba(5, 5, 10, 0.3)));
+  background-image: linear-gradient(rgba(5, 5, 10, 0.3) 1%, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 0) 97%, rgba(5, 5, 10, 0.3) 99%);
+}
+
+.banner-content-base {
+  position: absolute;
+  height: 544px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  padding: 0 8px;
+}
+
+.banner-content-frame {
+  position: relative;
+  height: 544px;
+}
+
+.banner-buttons {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-buttons img[id="bt-prv"] {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.banner-buttons img[id="bt-nxt"] {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.banner-content {
+  position: absolute;
+  z-index: 100;
+  padding-top: 48px;
+  top: 40%;
+}
+
+.banner-content p {
+  line-height: 1.4em;
+  margin-bottom: 1em;
+}
+
+.slide-selector {
+  padding: 15px;
+  text-align: center;
+}
+
+.slide-selector input {
+  display: none;
+}
+
+.slide-selector label {
+  content: url(./images/toggle_disable.jpg);
+}
+
+.slide-selector input:checked + label {
+  content: url(./images/toggle_active.jpg);
+}
+
+.features {
+  background-color: #121B2C;
+}
+
+.feature {
+  width: 33.33%;
+  float: left;
+}
+
+.feature img {
+  float: left;
+}
+
+.feature h1 {
+  float: left;
+  margin-top: 14px;
+  margin-left: 14px;
+  margin-bottom: 32px;
+}
+
+.feature p {
+  clear: both;
+  line-height: 1.4em;
+}
+
+.infos {
+  background-color: #040811;
+}
+
+.info {
+  width: 33.33%;
+  float: left;
+}
+
+.info h2 {
+  margin-bottom: 16px;
+}
+
+.info p {
+  margin-bottom: 10px;
+}
+
+.info-contact {
+  padding-top: 16px;
+}
+
+.info-quote {
+  padding: 0;
+}
+
+.info-quote p {
+  padding: 32px 16px;
+}
+
+.quote-body {
+  position: relative;
+}
+
+.quote {
+  position: relative;
+  padding: 16px;
+  background-color: #0C1019;
+  z-index: 2;
+}
+
+.arrow-quote {
+  background-color: #0C1019;
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: skewY(-30deg);
+          transform: skewY(-30deg);
+  z-index: 1;
+}
+
+.info-app-store div {
+  float: left;
+}
+
+.info-app-store div:last-child {
+  margin-top: 16px;
+  margin-left: 14px;
+}
+
+.info-app-store div:last-child img {
+  margin-top: 12px;
+}
+
+footer > div {
+  float: left;
+}
+
+footer div:last-child {
+  float: right;
+}
+
+footer div:last-child img {
+  margin-top: -16px;
+  max-width: 100%;
+}
+
+.bottom-links {
+  margin-bottom: 16px;
+}
+
+.bottom-links span {
+  margin: 0 10px;
+}
+
+.nav-menu-compact {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+  .auth-link {
+    display: none;
+  }
+  .nav-menu-compact {
+    display: block;
+    float: right;
+    clear: both;
+    margin-top: 24px;
+    float: right;
+  }
+  .nav-menu-compact div {
+    width: 16px;
+    height: 2px;
+    background-color: #0078BD;
+    margin: 4px 0;
+  }
+  .logo img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner-buttons {
+    display: none;
+  }
+  .info, .feature {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 32px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
