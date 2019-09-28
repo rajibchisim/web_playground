@@ -13,8 +13,8 @@
 <body>
     <div class="master">
         <!-- Header Start -->
-        <header class="wrapper padd-side">
-            <div class="logo padd-stand"><img src="./images/company_logo.jpg" alt="Blue Edge"></div>
+        <header class="wrapper-content">
+            <div class="logo"><img src="./images/company_logo.jpg" alt="Blue Edge"></div>
             <div class="navigation">
                 <div class="auth-link f14">
                     <a class="button-small txt-gray"><img src="./images/icon_lock_dark_blue.jpg" alt=""> Client
@@ -32,7 +32,11 @@
                         <li><a href="#">Careers</a></li>
                     </ul>
                 </nav>
-                <div class="nav-menu-compact"><div></div><div></div><div></div></div>
+                <div class="nav-menu-compact">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         </header>
         <!-- Header End -->
@@ -42,13 +46,9 @@
             <div class="hero">
                 <div class="banner-slides"></div>
                 <div class="overlay"></div>
-                <div class="banner-content-base">
-                    <div class="wrapper-no-overflow banner-content-frame">
-                        <div class="banner-buttons">
-                            <img src="./images/ico_back.png" alt="" class="arrow-button" id="bt-prv">
-                            <img src="./images/ico_next.png" alt="" class="arrow-button" id="bt-nxt">
-                        </div>
-                        <div class="banner-content padd-side">
+                <div class="wrapper wrapper-banner">
+                    <div class="wrapper-content wrapper-banner-content">
+                        <div class="banner-content">
                             <h1 class="f38 thin">Developing Mobile <br> <span class="f42 bold txt-brand">Communication
                                     Solutions</span></h1>
                             <p class="f18 thin">Oceans Edge is a global provider of mobile communications
@@ -59,9 +59,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="banner-buttons">
+                        <img src="./images/ico_back.png" alt="" class="arrow-button" id="bt-prv">
+                        <img src="./images/ico_next.png" alt="" class="arrow-button" id="bt-nxt">
+                    </div>
                 </div>
             </div>
-            <div class="wrapper slide-selector">
+            <div class="wrapper-content slide-selector">
                 <form action="">
                     <input id="choice-1" name="slide" type="radio" checked=true>
                     <label for="choice-1"></label>
@@ -77,7 +81,7 @@
         <!-- Banner End -->
 
         <!-- Features Start -->
-        <section class="wrapper features padd-stand-48">
+        <section class="wrapper-content features padd-stand-48">
             <div class="feature">
                 <img src="./images/ico_globe.jpg" alt="">
                 <h1 class="f24 thin">Wireless<br><span class="f24 bold txt-brand">Cyber Security</span></h1>
@@ -101,43 +105,84 @@
 
         <!-- Information Start -->
         <section class="infos padd-stand-48">
-            <div class="wrapper padd-side">
-                <div class="info info-contact">
-                    <h2 class="f18 bold">Oceans <span class="txt-brand">Edge Inc.</span></h2>
-                    <p>1861 Wiehle Avenue, Suite #250<br>Reston, VA 20190</p>
-                    <p>Toll Free +1 (703) 793.9217</p>
-                    <p>Fax +1 (703) 535.3321</p>
-                    <p>Email infromation@oceanedge.biz</p>
-                </div>
-                <div class="info info-quote">
-                    <div class="quote-body">
-                        <div class="quote">
-                            <h2 class="f18 bold">Customer's <span class="txt-brand">Testimonials</span></h2>
-                            <blockquote>"I ask new customers what visit my bakery. Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipisicing elit. In, fugiat!"</blockquote>
+            <div class="wrapper-content">
+                <!-- Sequence 1 Start-->
+                <div class="layout-1">
+                    <div class="info info-contact">
+                        <h2 class="f18 bold">Oceans <span class="txt-brand">Edge Inc.</span></h2>
+                        <p>1861 Wiehle Avenue, Suite #250<br>Reston, VA 20190</p>
+                        <p>Toll Free +1 (703) 793.9217</p>
+                        <p>Fax +1 (703) 535.3321</p>
+                        <p>Email infromation@oceanedge.biz</p>
+                    </div>
+                    <div class="info info-quote">
+                        <div class="quote-body">
+                            <div class="quote">
+                                <h2 class="f18 bold">Customer's <span class="txt-brand">Testimonials</span></h2>
+                                <blockquote>"I ask new customers what visit my bakery. Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipisicing elit. In, fugiat!"</blockquote>
+                            </div>
+                            <div class="arrow-quote"></div>
                         </div>
-                        <div class="arrow-quote"></div>
+                        <p><span class="bold">Rhoda Worku</span><br>www.CabooseBakery.com</p>
                     </div>
-
-                    <p><span class="bold">Rhoda Worku</span><br>www.CabooseBakery.com</p>
-                </div>
-                <div class="info info-app-store">
-                    <div>
-                        <img src="./images/phone.jpg" alt="">
-                    </div>
-                    <div>
-                        <h2 class="f18 bold">Oceans'<br><span class="txt-brand">Edge App</span></h2>
-                        <img src="./images/logo_app_store.jpg" alt="">
+                    <div class="info info-app-store">
+                        <div>
+                            <img src="./images/phone.jpg" alt="">
+                        </div>
+                        <div>
+                            <h2 class="f18 bold">Oceans'<br><span class="txt-brand">Edge App</span></h2>
+                            <img src="./images/logo_app_store.jpg" alt="">
+                        </div>
                     </div>
                 </div>
+                <!-- Sequence 1 End-->
+    
+                <!-- Sequence 2 Start-->
+                <div class="layout-2">
+                    <div class="info info-quote">
+                        <div class="quote-body">
+                            <div class="quote">
+                                <h2 class="f18 bold">Customer's <span class="txt-brand">Testimonials</span></h2>
+                                <blockquote>"I ask new customers what visit my bakery. Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipisicing elit. In, fugiat!"</blockquote>
+                            </div>
+                            <div class="arrow-quote"></div>
+                        </div>
+                        <p><span class="bold">Rhoda Worku</span><br>www.CabooseBakery.com</p>
+                    </div>
+                    <div class="info info-app-store">
+                        <div>
+                            <img src="./images/phone.jpg" alt="">
+                        </div>
+                        <div>
+                            <h2 class="f18 bold">Oceans'<br><span class="txt-brand">Edge App</span></h2>
+                            <img src="./images/logo_app_store.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info info-contact">
+                        <h2 class="f18 bold">Oceans <span class="txt-brand">Edge Inc.</span></h2>
+                        <p>1861 Wiehle Avenue, Suite #250<br>Reston, VA 20190</p>
+                        <p>Toll Free +1 (703) 793.9217</p>
+                        <p>Fax +1 (703) 535.3321</p>
+                        <p>Email infromation@oceanedge.biz</p>
+                    </div>
+                </div>
+                <!-- Sequence 2 End-->
             </div>
+
         </section>
         <!-- Information End -->
 
-        <footer class="wrapper padd-side-48 padd-stand-48">
-            <div>
-                <div class="bottom-links">
+        <footer class="wrapper-content padd-stand">
+            <div class="bottom-format-2 others">
+                <img src="./images/logo_symbian.jpg" alt="">
+                <img src="./images/company_logo_b.png" alt="">
+            </div>
+            <div class="bottom-links">
+                <div>
                     <a href="$">Home</a><span class="link-divider">|</span>
                     <a href="$">About Us</a><span class="link-divider">|</span>
                     <a href="$">Mobile Application</a><span class="link-divider">|</span>
@@ -146,7 +191,7 @@
                 </div>
                 <p>Copyright@2010. Oceans' Edge Inc. All Right Reserved.</p>
             </div>
-            <div>
+            <div class="bottom-format-1 others">
                 <img src="./images/logo_symbian.jpg" alt="">
                 <img src="./images/company_logo_b.png" alt="">
             </div>

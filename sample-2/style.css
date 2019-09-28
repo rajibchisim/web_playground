@@ -46,7 +46,7 @@
   background-color: #0078BD !important;
 }
 
-.padd-side, .feature, .info, footer div:last-child img {
+.padd-side, footer .others img {
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -119,20 +119,24 @@ a {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1440px;
+}
+
+.wrapper-content {
+  max-width: 1340px;
+}
+
+.wrapper, .wrapper-content {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
 }
 
-.wrapper-no-overflow {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 header {
   background-color: #121B2A;
+  padding-left: 48px;
+  padding-right: 48px;
   position: relative;
   z-index: 100;
 }
@@ -163,6 +167,8 @@ header {
 
 .logo {
   float: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .logo img {
@@ -200,23 +206,19 @@ header {
   background-image: linear-gradient(rgba(5, 5, 10, 0.3) 1%, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, 0) 97%, rgba(5, 5, 10, 0.3) 99%);
 }
 
-.banner-content-base {
+.wrapper-banner {
   position: absolute;
-  height: 544px;
-  width: 100%;
-  top: 0;
   left: 0;
-  z-index: 150;
-  padding: 0 8px;
-}
-
-.banner-content-frame {
-  position: relative;
+  right: 0;
+  top: 0;
   height: 544px;
 }
 
 .banner-buttons {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   width: 100%;
   height: 100%;
@@ -225,19 +227,30 @@ header {
 .banner-buttons img[id="bt-prv"] {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 8px;
 }
 
 .banner-buttons img[id="bt-nxt"] {
   position: absolute;
   top: 50%;
+  right: 8px;
+}
+
+.wrapper-banner-content {
+  position: relative;
+  left: 0;
   right: 0;
+  top: 0;
+  height: 544px;
 }
 
 .banner-content {
   position: absolute;
+  width: 100%;
   z-index: 100;
   padding-top: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
   top: 40%;
 }
 
@@ -265,10 +278,14 @@ header {
 
 .features {
   background-color: #121B2C;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .feature {
   width: 33.33%;
+  padding-left: 18px;
+  padding-right: 18px;
   float: left;
 }
 
@@ -290,11 +307,19 @@ header {
 
 .infos {
   background-color: #040811;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.layout-2 {
+  display: none;
 }
 
 .info {
   width: 33.33%;
   float: left;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .info h2 {
@@ -307,10 +332,6 @@ header {
 
 .info-contact {
   padding-top: 16px;
-}
-
-.info-quote {
-  padding: 0;
 }
 
 .info-quote p {
@@ -340,6 +361,10 @@ header {
   z-index: 1;
 }
 
+.info-app-store {
+  padding-right: 0;
+}
+
 .info-app-store div {
   float: left;
 }
@@ -353,31 +378,114 @@ header {
   margin-top: 12px;
 }
 
-footer > div {
+.bottom-format-2 {
+  display: none;
+}
+
+footer {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+footer .bottom-links {
   float: left;
+  margin-top: 16px;
 }
 
-footer div:last-child {
-  float: right;
-}
-
-footer div:last-child img {
-  margin-top: -16px;
-  max-width: 100%;
-}
-
-.bottom-links {
+footer .bottom-links div div {
   margin-bottom: 16px;
 }
 
-.bottom-links span {
+footer .bottom-links div span {
   margin: 0 10px;
+}
+
+footer .others {
+  float: right;
+}
+
+footer .others img {
+  padding-left: 0;
+  max-width: 100%;
+}
+
+footer .others img:first-child {
+  padding-bottom: 10px;
 }
 
 .nav-menu-compact {
   display: none;
 }
 
+@media (max-width: 1024px) {
+  .feature {
+    width: 80%;
+    text-align: center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+  }
+  .feature img, .feature h1 {
+    float: none;
+  }
+  .layout-1 {
+    display: none;
+  }
+  .layout-2 {
+    display: block;
+  }
+  .info {
+    width: 50%;
+  }
+  .info-contact {
+    clear: both;
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .info-contact h2 {
+    margin-top: 64px;
+  }
+}
+
+@media (max-width: 950px) {
+  footer img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 850px) {
+  footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  footer .bottom-format-2 {
+    display: block;
+  }
+  footer .others {
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .others img {
+    float: none;
+    padding-left: 0;
+    padding-right: 8px;
+  }
+  footer .bottom-links {
+    float: none;
+  }
+  footer .bottom-links div, footer .bottom-links p {
+    text-align: center;
+  }
+  footer .bottom-format-1 {
+    display: none;
+  }
+}
+
+/* 800 Start */
 @media (max-width: 800px) {
   nav {
     display: none;
@@ -389,7 +497,7 @@ footer div:last-child img {
     display: block;
     float: right;
     clear: both;
-    margin-top: 24px;
+    margin-top: 16px;
     float: right;
   }
   .nav-menu-compact div {
@@ -398,8 +506,62 @@ footer div:last-child img {
     background-color: #0078BD;
     margin: 4px 0;
   }
+  .banner-buttons {
+    display: none;
+  }
   .logo img {
     width: 50%;
+  }
+  header, .banner-content {
+    padding-left: 32px;
+    padding-right: 32px;
+    top: 30%;
+  }
+  .banner-content {
+    top: 30%;
+  }
+}
+
+/* 800 End */
+@media (max-width: 690px) {
+  .info {
+    width: 100%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info-app-store {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 500px) {
+  #learn-button-big {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, #F5F5F5));
+    background-image: linear-gradient(white 50%, #F5F5F5 50%);
+    font-weight: 300;
+    font-size: 18px;
+    padding: 8px 16px;
+    width: 180px;
+  }
+  header, .banner-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .banner-content {
+    top: 20%;
+  }
+  .features {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .card {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .infos {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -412,6 +574,21 @@ footer div:last-child img {
     padding-left: 16px;
     padding-right: 16px;
     margin-bottom: 32px;
+  }
+  .info-app-store {
+    padding-right: 0;
+  }
+  .info-app-store div:last-child img {
+    width: 108px;
+  }
+  footer .others img {
+    width: 128px;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner-content {
+    top: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
