@@ -10,6 +10,12 @@ body {
     line-height: 1.7;
     color: #626262;
 }
+button {
+    cursor: pointer;
+}
+button:focus, input:focus {
+    outline: none;
+}
 .wrapper {
     max-width: 1094px;
     margin-left: auto;
@@ -133,14 +139,13 @@ header {
     }
     form {
         max-width: 400px;
-        border-bottom: 1px solid #626262;
+        border-bottom: 2px solid #626262;
         margin-left: auto;
         margin-right: auto;
 
         img {
             margin-top: 4px;
-            width: 32px;
-            float: right;
+            width: 32px;            
         }
         input {
             font-family: 'Playfair Display', serif;
@@ -148,10 +153,17 @@ header {
             font-weight: 400;
             padding: 6px;
             background-color: inherit;
-            border: 0;
-            :focus {
-                border: 0;
-            }
+            width: 85%;
+            border: 0;              
+        }        
+        button {
+            float: right;
+            border: none;
+            background-color: inherit;
+            transition: all .5s;
+        }
+        button:hover {
+            transform: translateX(5px);            
         }
     }
 }
@@ -164,6 +176,9 @@ header {
     margin-right: auto;
     border: 1px solid #626262;
     background-color: white;
+}
+.bt-more:hover {
+    background-color: #F0F0F0;
 }
 .more {
     margin-top: 32px;

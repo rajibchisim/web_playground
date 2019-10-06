@@ -13,6 +13,14 @@ body {
   color: #626262;
 }
 
+button {
+  cursor: pointer;
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+
 .wrapper {
   max-width: 1094px;
   margin-left: auto;
@@ -157,7 +165,7 @@ header nav a {
 
 .newsletter-wrapper form {
   max-width: 400px;
-  border-bottom: 1px solid #626262;
+  border-bottom: 2px solid #626262;
   margin-left: auto;
   margin-right: auto;
 }
@@ -165,7 +173,6 @@ header nav a {
 .newsletter-wrapper form img {
   margin-top: 4px;
   width: 32px;
-  float: right;
 }
 
 .newsletter-wrapper form input {
@@ -174,11 +181,21 @@ header nav a {
   font-weight: 400;
   padding: 6px;
   background-color: inherit;
+  width: 85%;
   border: 0;
 }
 
-.newsletter-wrapper form input :focus {
-  border: 0;
+.newsletter-wrapper form button {
+  float: right;
+  border: none;
+  background-color: inherit;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.newsletter-wrapper form button:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 
 .bt-more {
@@ -190,6 +207,10 @@ header nav a {
   margin-right: auto;
   border: 1px solid #626262;
   background-color: white;
+}
+
+.bt-more:hover {
+  background-color: #F0F0F0;
 }
 
 .more {
