@@ -1,0 +1,292 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+.bg-dark {
+    background-color: #010101;
+}
+.bg-brand {
+    background-color: #fcdb00;
+}
+.text-brand {
+    color: #fcdb00;
+}
+.content-area {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+.top-nav {
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.top-links {
+    font-size: 22px;
+    font-weight: 700;
+    a {
+        color: black !important;
+    }
+    li {
+        margin: 0 15px;
+    }
+}
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.section-content {
+    padding-top: 0;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.section-title-sub {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.vendor-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-custom-indicators {
+    margin-bottom: 0;
+    bottom: -60px;
+    li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+}
+
+.features {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    .card {
+        border: 0;
+        img {
+            margin-top: 14px;
+        }
+    }
+    .card-title {
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .card-body {
+        text-align: center;
+    }
+}
+.feature-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter {
+    color: #898989;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    form {
+        width: 70%;
+    }
+}
+
+.bottom-links {
+    padding-top: 50px;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: inherit;        
+    }
+}
+
+.address {
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    padding-bottom: 16px;
+}
+
+// Base style END
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {   
+    .newsletter {
+        form {
+            width: 100%;
+        }
+    }    
+}
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .logo {
+        font-size: 30px;
+    }    
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .top-nav {
+        padding-top: 30px;
+    } 
+
+    .logo {
+        font-size: 30px;
+    } 
+
+    .section {
+        padding-top: 50px;
+        padding-bottom: 100px; 
+    }
+    .section-content {
+        padding-top: 60px;
+    }
+    .section-content {
+        padding-top: 60px;
+    }
+    .section p {
+        margin-bottom: 28px;
+    }
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+    .section-title-sub {
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+    .vendor-logo {
+        justify-content: flex-start;
+    }
+
+    .features {
+        padding-top: 100px;
+        padding-bottom: 120px;
+        .card-body {
+            text-align: left;
+        }
+        .card-title {
+            font-size: 20px;
+        }
+    }
+
+    .newsletter {
+        padding-top: 100px;
+    }
+
+
+    .carousel-custom-indicators {
+        li {
+            width: 16px;
+            height: 16px;
+        }
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .top-nav {
+        padding-top: 30px;
+    } 
+    .logo {
+        font-size: 30px;
+    }
+    .section-content {
+        padding-top: 60px;
+    }
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+    .section-title-sub {
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+    .vendor-logo {
+        justify-content: flex-start;
+    }
+
+    .features {
+        padding-top: 100px;
+        padding-bottom: 120px;
+        .card-body {
+            text-align: left;
+        }
+        .card-title {
+            font-size: 20px;
+        }
+    }
+
+    .newsletter {
+        padding-top: 100px;
+    }
+    .carousel-custom-indicators {
+        li {
+            width: 16px;
+            height: 16px;
+        }
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .top-nav {
+        padding-top: 30px;
+    } 
+    .logo {
+        font-size: 30px;
+    }
+    .section-content {
+        padding-top: 60px;
+    }
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+    .section-title-sub {
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+    .vendor-logo {
+        justify-content: flex-start;
+    }
+    .features {
+        padding-top: 100px;
+        padding-bottom: 120px;
+        .card-body {
+            text-align: left;
+        }
+        .card-title {
+            font-size: 20px;
+        }
+    }
+    .newsletter {
+        padding-top: 100px;
+    }
+    .carousel-custom-indicators {
+        li {
+            width: 16px;
+            height: 16px;
+        }
+    }
+ }

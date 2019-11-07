@@ -1,0 +1,292 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+}
+
+.bg-dark {
+  background-color: #010101;
+}
+
+.bg-brand {
+  background-color: #fcdb00;
+}
+
+.text-brand {
+  color: #fcdb00;
+}
+
+.content-area {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.top-nav {
+  padding-top: 16px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.top-links {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.top-links a {
+  color: black !important;
+}
+
+.top-links li {
+  margin: 0 15px;
+}
+
+.section {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.section-content {
+  padding-top: 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.section-title-sub {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.vendor-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel-custom-indicators {
+  margin-bottom: 0;
+  bottom: -60px;
+}
+
+.carousel-custom-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.features {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.features .card {
+  border: 0;
+}
+
+.features .card img {
+  margin-top: 14px;
+}
+
+.features .card-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.features .card-body {
+  text-align: center;
+}
+
+.feature-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter {
+  color: #898989;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.newsletter form {
+  width: 70%;
+}
+
+.bottom-links {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.bottom-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.address p {
+  margin-bottom: 10px;
+}
+
+footer {
+  padding-bottom: 16px;
+}
+
+@media (max-width: 575.98px) {
+  .newsletter form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .logo {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .top-nav {
+    padding-top: 30px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .section {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .section-content {
+    padding-top: 60px;
+  }
+  .section-content {
+    padding-top: 60px;
+  }
+  .section p {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+  .section-title-sub {
+    font-size: 20px;
+    margin-bottom: 28px;
+  }
+  .vendor-logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .features {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .features .card-body {
+    text-align: left;
+  }
+  .features .card-title {
+    font-size: 20px;
+  }
+  .newsletter {
+    padding-top: 100px;
+  }
+  .carousel-custom-indicators li {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .top-nav {
+    padding-top: 30px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .section-content {
+    padding-top: 60px;
+  }
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+  .section-title-sub {
+    font-size: 20px;
+    margin-bottom: 28px;
+  }
+  .vendor-logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .features {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .features .card-body {
+    text-align: left;
+  }
+  .features .card-title {
+    font-size: 20px;
+  }
+  .newsletter {
+    padding-top: 100px;
+  }
+  .carousel-custom-indicators li {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-nav {
+    padding-top: 30px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .section-content {
+    padding-top: 60px;
+  }
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+  .section-title-sub {
+    font-size: 20px;
+    margin-bottom: 28px;
+  }
+  .vendor-logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .features {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .features .card-body {
+    text-align: left;
+  }
+  .features .card-title {
+    font-size: 20px;
+  }
+  .newsletter {
+    padding-top: 100px;
+  }
+  .carousel-custom-indicators li {
+    width: 16px;
+    height: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
