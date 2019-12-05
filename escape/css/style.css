@@ -1,0 +1,230 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.bg-light {
+  background-color: #fafafa;
+}
+
+.head-section {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.head-section a {
+  color: white !important;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero-content {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+
+.hero-content h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.hero-content h1 {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-size: 66px;
+  font-weight: 700;
+}
+
+.hero-content button {
+  font-size: 23px;
+  border: 1px solid white;
+  color: white;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section h1 {
+  font-size: 60px;
+}
+
+.section p {
+  font-size: 18px;
+}
+
+.service-icon {
+  position: relative;
+  padding: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.service-icon-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.service-content h1 {
+  font-size: 22px;
+}
+
+.service-content p {
+  font-size: 18px;
+}
+
+.testimonial .testimonial-title {
+  margin-bottom: 50px;
+}
+
+.testimonial .testimonial-photo {
+  width: 220px;
+  height: 220px;
+  background-color: black;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.quote-bg {
+  position: relative;
+  background-color: white;
+  padding: 32px;
+}
+
+.arrow-left::before,
+.arrow-right::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+.arrow-left::before {
+  left: -16px;
+}
+
+.arrow-right::before {
+  right: -16px;
+}
+
+.quote {
+  position: relative;
+  font-size: 26px;
+}
+
+p.quote-source {
+  font-size: 20px;
+  color: #7690c5;
+}
+
+.marketplaces {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.our-team {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.our-team-title {
+  margin-bottom: 74px;
+}
+
+.team-member {
+  margin-bottom: 50px;
+}
+
+.team-member h2 {
+  font-size: 18px;
+}
+
+.team-member h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.team-member-photo {
+  width: 220px;
+  height: 220px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.team-member-footer {
+  font-size: 20px;
+}
+
+.personal-social {
+  text-decoration: none;
+  color: white;
+}
+
+.personal-social .icon-wrapper {
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  padding-top: 4px;
+}
+
+.personal-social a {
+  color: white;
+  line-height: 0;
+  font-size: 24px;
+}
+
+.infos {
+  color: white;
+  background-color: #7690c5;
+}
+
+.infos p {
+  font-size: 18px;
+}
+
+.contact i {
+  margin-right: 4px;
+  width: 24px;
+  font-size: 20px;
+}
+
+footer p {
+  color: white;
+  background-color: #7690c5;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 0;
+}
+
+.message-form input, .message-form textarea {
+  font-size: 18px;
+  padding: 16px !important;
+}
+
+.message-form input {
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
