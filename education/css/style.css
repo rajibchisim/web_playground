@@ -1,0 +1,528 @@
+body {
+  font-family: 'Dosis', sans-serif;
+  background: url(../images/bg_pattern.jpg);
+}
+
+.border-yellow {
+  border-color: #ffd338;
+}
+
+.border-green {
+  border-color: #56d47e;
+}
+
+.border-meroon {
+  border-color: #f05c5c;
+}
+
+.bg-yellow {
+  background-color: #ffd338;
+}
+
+.bg-gray {
+  background-color: #a9a9a9;
+}
+
+.txt-white {
+  color: white;
+}
+
+.txt-dark {
+  color: #000 !important;
+}
+
+.txt-yellow {
+  color: #ffd338 !important;
+}
+
+.bg-meroon {
+  background-color: #f05c5c;
+}
+
+.txt-meroon {
+  color: #f05c5c !important;
+}
+
+.bg-ocean {
+  background-color: #1ec0ff;
+}
+
+.txt-blue-fb {
+  color: #4366ff !important;
+}
+
+.txt-blue-tweet {
+  color: #1ec0ff !important;
+}
+
+.bg-blue-tweet {
+  background-color: #1ec0ff !important;
+}
+
+.txt-blue-tumblr {
+  color: #0b3861 !important;
+}
+
+.txt-ocean {
+  color: #1ec0ff !important;
+}
+
+.bg-green {
+  background-color: #56d47e;
+}
+
+.txt-green {
+  color: #56d47e !important;
+}
+
+.top-nav {
+  font-family: 'Dosis', sans-serif;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.top-nav a {
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  padding: 4px 8px;
+}
+
+.top-nav a:hover {
+  background-color: #f05c5c;
+  border-radius: 500px;
+}
+
+.icon-jiraf:hover {
+  background-color: inherit !important;
+}
+
+.icon-top-nav {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 0;
+  margin-top: 16px;
+}
+
+.icon-top-nav:hover {
+  background-color: inherit !important;
+  color: #f05c5c;
+}
+
+.dropdown-profile,
+.dropdown-search {
+  border: 0;
+  position: absolute;
+  right: 0;
+}
+
+.dropdown-profile a,
+.dropdown-search a {
+  color: black;
+}
+
+.dropdown-profile {
+  left: -134px;
+}
+
+.dropdown-search {
+  left: -200px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.dropdown-search input {
+  outline: 0;
+  padding: 0;
+}
+
+.dropdown-search input:hover {
+  background-color: inherit;
+}
+
+.dropdown-search input:active {
+  background-color: inherit;
+}
+
+.dropdown-search input:focus {
+  background-color: inherit;
+}
+
+.section {
+  padding-top: 104px;
+  padding-bottom: 100px;
+}
+
+.section-title, .section-title-sub {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 30px;
+  text-shadow: 2px 2px 0 white;
+  text-transform: uppercase;
+}
+
+.section-title-sub {
+  font-size: 24px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.section-paragraph {
+  font-size: 14px;
+}
+
+.dashed-line {
+  border: 0;
+  border-bottom: 4px dashed white;
+  margin: 46px auto;
+}
+
+.banner {
+  background-image: url(../images/bg_cloud.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-title {
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 200px;
+  padding-bottom: 270px;
+}
+
+.hero-img {
+  background-image: url(https://picsum.photos/600/400);
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.features {
+  background: url(../images/feature-bg.jpg) repeat-x;
+}
+
+.feature {
+  text-align: center;
+}
+
+.course {
+  border: 0;
+  border-radius: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+.icon-course {
+  fill: white;
+  width: 16px;
+  height: 16px;
+}
+
+.course-topbar {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+  border: 0 !important;
+}
+
+.course-title {
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.course-details {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  min-height: 100px;
+}
+
+.course-thumbnail {
+  border-radius: 0;
+}
+
+.course-body {
+  position: relative;
+}
+
+.course-badge {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  right: 12px;
+  top: -25px;
+}
+
+.course-badge .price, .course-badge .duration {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.course-badge .price {
+  margin-top: 2px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.course-badge .duration {
+  line-height: .5;
+  font-size: 12px;
+}
+
+.course-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.course-footer p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.fluid-bar {
+  width: 100%;
+  height: 52px;
+  border-radius: 16px;
+  padding: 14px 0;
+  color: white;
+}
+
+.info-numbers {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+
+.info-numbers h2 {
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+}
+
+.achievment {
+  background-color: #6e6e6e;
+}
+
+.sp-btn {
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  background-image: url(../images/bt_artwork.png);
+  width: 248px;
+  height: 94px;
+  padding-top: 26px;
+}
+
+.memorable {
+  background-image: url(../images/bg_memorable.jpg);
+}
+
+.teacher h2, .teacher p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+.teacher h2 {
+  font-weight: 400;
+}
+
+.teacher p {
+  font-weight: 300;
+}
+
+.testimonial {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 76px;
+}
+
+.testimonial quote {
+  line-height: 2;
+}
+
+.quote-icon {
+  font-size: 76px;
+}
+
+.social-teacher {
+  margin-bottom: 16px;
+}
+
+.social-teacher i {
+  margin-right: 16px;
+}
+
+.follow-teacher {
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.circle-card {
+  position: relative;
+  width: 118px;
+}
+
+.circle-card .circle-card-img {
+  top: 6px;
+  left: 6px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.circle-card .circle-card-body {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.circle-card .circle-card-text-primary, .circle-card .circle-card-text-secondary {
+  line-height: 1;
+  margin: 0;
+}
+
+.circle-card .circle-card-text-primary {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+.circle-card .circle-card-text-secondary {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.events .section-title,
+.events .section-title-sub {
+  text-align: left;
+}
+
+.events .dashed-line {
+  margin-left: 0;
+}
+
+.event-details p, .event-details .timing {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+.event-details .timing {
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.event-details .details {
+  font-weight: 300;
+}
+
+.register-event-link {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline !important;
+  color: #fb9130 !important;
+  letter-spacing: 2px;
+}
+
+.dotted-line {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 4px;
+  border-bottom-style: dotted;
+}
+
+.nav-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav-bottom li {
+  margin-right: 16px;
+}
+
+.nav-bottom a {
+  color: inherit;
+}
+
+.contacts {
+  padding-top: 64px;
+  padding-bottom: 110px;
+}
+
+.contacts ul li {
+  margin-bottom: 6px;
+}
+
+.contacts .dotted-line {
+  margin-left: 0;
+  margin-bottom: 18px;
+}
+
+.contacts .section-title-sub {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.contacts-cloud-edge {
+  height: 200px;
+  background-image: url(../images/bg_cloud_edge.png);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.contacts-content {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.newsletter-form input {
+  border-right: 0;
+}
+
+.newsletter-form button {
+  border: 1px solid #ced4da;
+  border-left: 0;
+}
+
+.socials {
+  margin-top: 32px;
+}
+/*# sourceMappingURL=style.css.map */
