@@ -3,6 +3,9 @@ body
 
 .container 
     //border: 1px solid red
+.btn:hover
+    cursor: pointer
+    background-color: #3B55EA
 .bg-gradient
     background-image: -webkit-gradient(linear, left top, left bottom, from(#AFD1FE), to(white))
     background-image: linear-gradient(#AFD1FE, white)
@@ -42,20 +45,24 @@ body
 .feature-btn
     color: white !important
     background-color: #3B5576
-    width: 96px
+    width: 50%
     padding: 8px 24px
-    font-size: 12px
+    font-size: 16px
     font-family: 'Roboto', sans-serif
     font-weight: 300 !important
     margin-left: auto
     margin-right: auto
+    margin-bottom: 32px
+    &:hover
+        background-color: #4d6686
+        cursor: pointer
 .card-p
     font-weight: 300
-    font-size: 14px
+    font-size: 16px
     line-height: 1.5
     margin-top: 20px
     margin-bottom: 20px
-    min-height: 80px
+    min-height: 120px
 footer 
     background-color: #fff
     padding-top: 64px
@@ -63,7 +70,7 @@ footer
 .copyright 
     margin-bottom: 16px
     p
-      font-size: 12px
+      font-size: 16px
       text-align: center
       margin-bottom: 0
 .socials
@@ -71,3 +78,33 @@ footer
     img 
         width: 24px
         margin: 4px
+
+
+@media (min-width: 576px)
+    .container 
+        // max-width: 540px
+
+@media (max-width: 575.85px)
+    nav h1
+        font-size: 28px
+        margin-top: 6px
+        margin-bottom: 0
+        margin-right: 0
+    .hero-content
+        width: 60%
+        h1
+            font-size: 22px
+@media (max-width: 370px)
+    nav h1
+        font-size: 24px
+    .hero-content
+        width: 70%
+        h1
+            20px
+    .logo
+        display: none !important
+@media (max-width: 768.98px)
+    .card-p
+        min-height: 0
+    .feature-btn
+        margin-bottom: 48px
