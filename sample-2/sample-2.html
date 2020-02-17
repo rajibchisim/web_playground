@@ -13,41 +13,53 @@
 <body>
     <div class="master">
         <!-- Header Start -->
-        <header class="wrapper-content">
-            <div class="logo"><img src="./images/company_logo.jpg" alt="Blue Edge"></div>
-            <div class="navigation">
-                <div class="auth-link f14">
-                    <a class="button-small txt-gray"><img src="./images/icon_lock_dark_blue.jpg" alt=""> Client
-                        login</a>
-                    <!--
+        <div style="border-bottom: 2px solid rgb(14, 21, 32)">
+            <header class="wrapper-content">
+                <div class="navigation">
+                    <div class="logo"><img src="./images/company_logo.jpg" alt="Blue Edge"></div>
+                    <div class="auth-link f14">
+                        <a class="button-small txt-gray"><img src="./images/icon_lock_dark_blue.jpg" alt=""> Client
+                            login</a>
+                        <!--
                     --><a class="button-small bg-brand"><img src="./images/icon_lock_white.jpg" alt=""> Employee
-                        login</a>
+                            login</a>
+                    </div>
+                    <nav>
+                        <ul class="f14">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Mobile Application</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-menu-compact" id="bt-drawer-open">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>                    
                 </div>
-                <nav>
-                    <ul class="f14">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Solutions</a></li>
-                        <li><a href="#">Mobile Application</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </nav>
-                <div class="nav-menu-compact">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+            </header>
+            <div class="nav-drawer" id="side-drawer">
+                <div class="bt-drawer-close" id="bt-drawer-close"><div></div><div></div></div>
+                <ul class="nav-drawer-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Mobile Application</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
             </div>
-        </header>
+        </div>
+
         <!-- Header End -->
 
         <!-- Banner Start -->
         <section>
-            <div class="hero">
-                <div class="banner-slides"></div>
-                <div class="overlay"></div>
-                <div class="wrapper wrapper-banner">
-                    <div class="wrapper-content wrapper-banner-content">
+            <div class="wrapper-slider slider-wrapper">
+                <div class="banner-slider">
+                    <div class="slide" id="slide-1">
+                        <div class="img-slide" style="background-image: url(./images/banner.jpg);"></div>
                         <div class="banner-content">
                             <h1 class="f38 thin">Developing Mobile <br> <span class="f42 bold txt-brand">Communication
                                     Solutions</span></h1>
@@ -59,22 +71,44 @@
                             </div>
                         </div>
                     </div>
-                    <div class="banner-buttons">
-                        <img src="./images/ico_back.png" alt="" class="arrow-button" id="bt-prv">
-                        <img src="./images/ico_next.png" alt="" class="arrow-button" id="bt-nxt">
+                    <div class="slide" id="slide-2">
+                        <div class="img-slide" style="background-image: url(./images/banner.jpg);"></div>
+                        <div class="banner-content">
+                            <h1 class="f38 thin">Developing Web <br> <span class="f42 bold txt-brand">Communication
+                                    Solutions</span></h1>
+                            <p class="f18 thin">Oceans Edge is a global provider of mobile communications
+                                solution<br>for
+                                government and commercial organizations </p>
+                            <div id="learn-button-big" class="txt-gray">Learn more <img src="./images/ico_play.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" id="slide-3">
+                        <div class="img-slide" style="background-image: url(./images/banner.jpg);"></div>
+                        <div class="banner-content">
+                            <h1 class="f38 thin">Software <br> <span class="f42 bold txt-brand">
+                                    Solutions</span></h1>
+                            <p class="f18 thin">Oceans Edge is a global provider of mobile communications
+                                solution<br>for
+                                government and commercial organizations </p>
+                            <div id="learn-button-big" class="txt-gray">Learn more <img src="./images/ico_play.png"
+                                    alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="wrapper-content slide-selector">
+            <div class="slide-selector">
                 <form action="">
-                    <input id="choice-1" name="slide" type="radio" checked=true>
+                    <input name="choice" id="choice-1" class="choice-selector" type="radio" checked=true>
                     <label for="choice-1"></label>
-                    <input id="choice-2" name="slide" type="radio">
+                    <input name="choice" id="choice-2" class="choice-selector" type="radio">
                     <label for="choice-2"></label>
-                    <input id="choice-3" name="slide" type="radio">
+                    <input name="choice" id="choice-3" class="choice-selector" type="radio">
                     <label for="choice-3"></label>
-                    <input id="choice-4" name="slide" type="radio">
-                    <label for="choice-4"></label>
+                    <!-- <input name="choice" id="choice-4" class="choice-selector" type="radio">
+                    <label for="choice-4"></label> -->
                 </form>
             </div>
         </section>
@@ -128,17 +162,17 @@
                         <p><span class="bold">Rhoda Worku</span><br>www.CabooseBakery.com</p>
                     </div>
                     <div class="info info-app-store">
-                        <div>
+                        <div class="app-store-profile">
                             <img src="./images/phone.jpg" alt="">
                         </div>
-                        <div>
+                        <div class="app-store-logo">
                             <h2 class="f18 bold">Oceans'<br><span class="txt-brand">Edge App</span></h2>
                             <img src="./images/logo_app_store.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <!-- Sequence 1 End-->
-    
+
                 <!-- Sequence 2 Start-->
                 <div class="layout-2">
                     <div class="info info-quote">
@@ -154,12 +188,14 @@
                         <p><span class="bold">Rhoda Worku</span><br>www.CabooseBakery.com</p>
                     </div>
                     <div class="info info-app-store">
-                        <div>
-                            <img src="./images/phone.jpg" alt="">
-                        </div>
-                        <div>
-                            <h2 class="f18 bold">Oceans'<br><span class="txt-brand">Edge App</span></h2>
-                            <img src="./images/logo_app_store.jpg" alt="">
+                        <div class="app-store-items">
+                            <div class="app-store-profile">
+                                <img src="./images/phone.jpg" alt="">
+                            </div>
+                            <div class="app-store-logo">
+                                <h2 class="f18 bold">Oceans'<br><span class="txt-brand">Edge App</span></h2>
+                                <img src="./images/logo_app_store.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="info info-contact">
@@ -176,27 +212,90 @@
         </section>
         <!-- Information End -->
 
-        <footer class="wrapper-content padd-stand">
-            <div class="bottom-format-2 others">
-                <img src="./images/logo_symbian.jpg" alt="">
-                <img src="./images/company_logo_b.png" alt="">
-            </div>
-            <div class="bottom-links">
-                <div>
-                    <a href="$">Home</a><span class="link-divider">|</span>
-                    <a href="$">About Us</a><span class="link-divider">|</span>
-                    <a href="$">Mobile Application</a><span class="link-divider">|</span>
-                    <a href="#">Careers</a><span class="link-divider">|</span>
-                    <a href="#">Contact Us</a>
+        <footer class="wrapper-content padd-stand" id="footer">
+            <div class="bottom-navs">
+                <div class="ref-logos">
+                    <img src="./images/logo_symbian.jpg" alt="">
+                    <img src="./images/company_logo_b.png" alt="">
                 </div>
-                <p>Copyright@2010. Oceans' Edge Inc. All Right Reserved.</p>
+                <div class="bottom-links">
+                    <div>
+                        <a href="$">Home</a><span class="link-divider">|</span>
+                        <a href="$">About Us</a><span class="link-divider">|</span>
+                        <a href="$">Mobile Application</a><span class="link-divider">|</span>
+                        <a href="#">Careers</a><span class="link-divider">|</span>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
             </div>
-            <div class="bottom-format-1 others">
-                <img src="./images/logo_symbian.jpg" alt="">
-                <img src="./images/company_logo_b.png" alt="">
-            </div>
+            <p class="copyright">Copyright@2010. Oceans' Edge Inc. All Right Reserved.</p>
         </footer>
     </div>
+
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        console.log(slides);
+        let slideSelector = document.querySelectorAll('.choice-selector');
+        let activeSlideIndex = 1;
+        let activeSlide;
+        let nextSlide;
+
+        window.addEventListener('load', () => {
+            console.log('window loaded!')
+            activeSlide = document.getElementById('slide-1');
+            activeSlide.style.left = '0%';
+        })
+
+
+        let buttonDrawerOpen = document.getElementById('bt-drawer-open');
+        let sideDrawer = document.getElementById('side-drawer');
+        let buttonDrawerClose = document.getElementById('bt-drawer-close');
+
+        sideDrawer.style.right = '-54%';
+        sideDrawer.style.transition = 'all 0.5s';
+
+
+        buttonDrawerOpen.addEventListener('click', ()=>{
+            sideDrawer.style.right = 0;
+        })
+        buttonDrawerClose.addEventListener('click', ()=>{
+            sideDrawer.style.right = '-54%';
+        })
+
+
+        slideSelector.forEach(_slideSelector => {
+            _slideSelector.addEventListener('click', (event) => {
+                let targetSlideIndex = event.target.id.substr(7);
+                if(activeSlideIndex == targetSlideIndex) return;
+
+                nextSlide = document.getElementById('slide-' + targetSlideIndex);
+                // remove transition correction.
+                activeSlide.style.transition = 'all 0s';
+                nextSlide.style.transition = 'all 0s';
+                
+                // slide to left
+                if(activeSlideIndex - targetSlideIndex < 0) {
+                    // correct the order. for sliding left nextslide must be at right
+                    nextSlide.style.left = '100%';
+                    activeSlide.style.transition = 'left 2s';
+                    activeSlide.style.left = '-100%';
+                }
+                // slide to right
+                else {
+                    // correct the order. for sliding right nextslide must be at left
+                    nextSlide.style.left = '-100%';
+                    activeSlide.style.transition = 'left 2s';
+                    activeSlide.style.left = '100%';
+                }
+
+                nextSlide.style.transition = 'left 2s';
+                nextSlide.style.left = '0%';
+                activeSlide = nextSlide;
+                activeSlideIndex = targetSlideIndex;
+
+            })
+        });
+    </script>
 </body>
 
 </html>
