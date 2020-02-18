@@ -13,25 +13,33 @@
 </head>
 
 <body>
-    <header class="wrapper">
-        <img src="./images/minimo.png" alt="">
-        <nav class="nav">
-            <ul>
-                <li><a href="#">lifestyle</a></li>
-                <li><a href="#">photodiary</a></li>
-                <li><a href="#">music</a></li>
-                <li><a href="#">travel</a></li>
-            </ul>
-        </nav>
-        <div class="nav-menu-compact">
-            <div></div>
-            <div></div>
-            <div></div>
+    <div class="bt-scroll-top"><a href="#start"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></div>
+    <div class="nav-menu-compact">
+        <a href="javascript:void(0)" onclick="closeCompactNav()" class="compact-menu-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <div class="compact-menu-items">
+            <a href="#lifestyle" onclick="closeCompactNav()">lifestyle</a>
+            <a href="#photodiary" onclick="closeCompactNav()">photodiary</a>
+            <a href="#music" onclick="closeCompactNav()">music</a>
+            <a href="#travel" onclick="closeCompactNav()">travel</a>
         </div>
+    </div>
+    <header>
+        <div class="wrapper top-nav">
+            <img src="./images/minimo.png" alt="">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#lifestyle">lifestyle</a></li>
+                    <li><a href="#photodiary">photodiary</a></li>
+                    <li><a href="#music">music</a></li>
+                    <li><a href="#travel">travel</a></li>
+                </ul>
+            </nav>  
+            <a href="javascript:void(0)" onclick="openCompactNav()" class="compact-menu-open"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>      
     </header>
 
     <!-- Post start -->
-    <section class="wrapper post">
+    <section id="start" class="wrapper post">
         <div class="post-bg-image"></div>
         <div class="wrapper-content post-content">
             <h2>lifestyle</h2>
@@ -50,7 +58,7 @@
     <!-- Post end -->
 
     <!-- Stories start -->
-    <section class="wrapper-content">
+    <section class="wrapper-content" id="lifestyle">
         <div class="card">
             <div style="background-image: url(./images/image-4.png)"></div>
             <h2>LIFESTYLE</h2>
@@ -81,6 +89,8 @@
                 sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
             </p>
         </div>
+    </section>
+    <section class="wrapper-content" id="photodiary">
         <div class="card">
             <div style="background-image: url(./images/image-3.png)"></div>
             <h2>PHOTODIARY</h2>
@@ -122,10 +132,10 @@
     <!-- Newsletter end -->
 
     <!-- Stories start -->
-    <section class="wrapper-content">
+    <section class="wrapper-content" id="music">
         <div class="card">
             <div style="background-image: url(./images/image-1.png)"></div>
-            <h2>LIFESTYLE</h2>
+            <h2>MUSIC</h2>
             <h1>Top 10 song for running</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -136,7 +146,31 @@
         </div>
         <div class="card">
             <div style="background-image: url(./images/image.png)"></div>
-            <h2>LIFESTYLE</h2>
+            <h2>MUSIC</h2>
+            <h1>Cold winter days</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </section>
+    <section class="wrapper-content" id="travel">
+        <div class="card">
+            <div style="background-image: url(./images/image-1.png)"></div>
+            <h2>TRAVEL</h2>
+            <h1>Top 10 song for running</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt.
+            </p>
+        </div>
+        <div class="card">
+            <div style="background-image: url(./images/image.png)"></div>
+            <h2>TRAVEL</h2>
             <h1>Cold winter days</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -168,6 +202,61 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let compactMenu = document.querySelector('.nav-menu-compact');
+        let buttonGoTop = document.querySelector('.bt-scroll-top');
+        let topNavBar = document.querySelector('header');
+        let scrollHeightOffset = document.body.scrollHeight - 110;
+        let offset;
+        
+        buttonGoTop.style.visibility = 'visible';
+        compactMenu.style.transition = 'width .5s';
+        
+        function openCompactNav() {
+            compactMenu.style.width = '100%';
+        }
+        function closeCompactNav() {
+            compactMenu.style.width = '0%';
+        }
+
+        window.addEventListener('scroll', ()=>{
+            bottomLimitGoTopButton();            
+
+            if(window.scrollY > 60) {
+                //shrink top nav bar
+                topNavBar.classList.add('shrink');
+            }
+            else {
+                topNavBar.classList.remove('shrink');
+            }
+
+            if(window.scrollY > window.innerHeight) {
+                console.log('show top Button')
+                buttonGoTop.style.visibility = 'visible';
+            }
+            else {
+                buttonGoTop.style.visibility = 'hidden';
+                console.log('dont show top button.....')
+            }
+        })
+
+        window.addEventListener('resize', ()=>{
+            bottomLimitGoTopButton();            
+        })
+
+        function bottomLimitGoTopButton(){
+            // console.log('.. -> ', document.body.scrollHeight - 110, ' | ', window.scrollY + window.innerHeight);
+            offset = scrollHeightOffset - window.scrollY - window.innerHeight;
+            console.log(offset);
+            if(offset < 0){
+                buttonGoTop.style.bottom = Math.abs(offset) + 8 + 'px';
+            }
+            else {
+                buttonGoTop.style.bottom = '8px';
+            }
+        }
+    </script>
 </body>
 
 </html>
