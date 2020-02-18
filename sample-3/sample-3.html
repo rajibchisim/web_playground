@@ -185,7 +185,7 @@
     <section class="wrapper-content more">
         <button class="bt-more">Load more</button>
     </section>
-    <footer>
+    <footer id="site-footer">
         <div class="wrapper-content bottom-links">
             <div class="terms">
                 <a href="#">Terms and conditions</a>
@@ -242,6 +242,7 @@
         })
 
         window.addEventListener('resize', ()=>{
+            scrollHeightOffset = document.body.scrollHeight - 110;
             bottomLimitGoTopButton();            
         })
 

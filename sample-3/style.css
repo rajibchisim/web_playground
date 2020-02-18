@@ -37,6 +37,10 @@ button:focus, input:focus {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.compact-menu-open {
+  display: none;
+}
+
 .wrapper {
   max-width: 1094px;
   margin-left: auto;
@@ -76,7 +80,7 @@ header nav {
 }
 
 header nav ul li {
-  padding: 0px 0px 8px 10vw;
+  padding: 0px 0px 8px 64px;
   list-style: none;
   float: left;
 }
@@ -305,6 +309,7 @@ footer {
     display: none;
   }
   .compact-menu-open {
+    display: block;
     float: right;
     margin-top: -10px;
     padding: 0 8px;

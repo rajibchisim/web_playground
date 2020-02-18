@@ -29,6 +29,9 @@ button:focus, input:focus {
         background-color: rgba($color: #000, $alpha: .05);
     }
 }
+.compact-menu-open {
+    display: none;
+}
 .wrapper {
     max-width: 1094px;
     margin-left: auto;
@@ -63,7 +66,7 @@ header {
         // border: 1px solid purple;
         float: right;
         ul li {
-            padding: 0px 0px 8px 10vw;
+            padding: 0px 0px 8px 64px;
             list-style: none;
             float: left;
         }
@@ -264,6 +267,7 @@ footer {
         display: none;
     }
     .compact-menu-open {
+        display: block;
         float: right;
         margin-top: -10px;
         padding: 0 8px;
