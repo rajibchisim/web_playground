@@ -212,6 +212,8 @@
         
         buttonGoTop.style.visibility = 'visible';
         compactMenu.style.transition = 'width .5s';
+
+        toggleGoTopButton();
         
         function openCompactNav() {
             compactMenu.style.width = '100%';
@@ -222,7 +224,7 @@
 
         window.addEventListener('scroll', ()=>{
             bottomLimitGoTopButton();            
-
+            toggleGoTopButton();
             if(window.scrollY > 60) {
                 //shrink top nav bar
                 topNavBar.classList.add('shrink');
@@ -230,7 +232,15 @@
             else {
                 topNavBar.classList.remove('shrink');
             }
+        })
 
+        window.addEventListener('resize', ()=>{
+            scrollHeightOffset = document.body.scrollHeight - 110;
+            toggleGoTopButton();
+            bottomLimitGoTopButton();
+        })
+
+        function toggleGoTopButton(){
             if(window.scrollY > window.innerHeight) {
                 console.log('show top Button')
                 buttonGoTop.style.visibility = 'visible';
@@ -239,12 +249,7 @@
                 buttonGoTop.style.visibility = 'hidden';
                 console.log('dont show top button.....')
             }
-        })
-
-        window.addEventListener('resize', ()=>{
-            scrollHeightOffset = document.body.scrollHeight - 110;
-            bottomLimitGoTopButton();            
-        })
+        }
 
         function bottomLimitGoTopButton(){
             // console.log('.. -> ', document.body.scrollHeight - 110, ' | ', window.scrollY + window.innerHeight);
