@@ -39,7 +39,7 @@
     </header>
 
     <!-- Post start -->
-    <section id="start" class="wrapper post">
+    <section id="start" class="wrapper post featured">
         <div class="post-bg-image"></div>
         <div class="wrapper-content post-content">
             <h2>lifestyle</h2>
@@ -207,24 +207,37 @@
         let compactMenu = document.querySelector('.nav-menu-compact');
         let buttonGoTop = document.querySelector('.bt-scroll-top');
         let topNavBar = document.querySelector('header');
-        let scrollHeightOffset = document.body.scrollHeight - 110;
+        let footerHeight = document.querySelector('footer').offsetHeight;
+        let scrollHeightOffset = document.body.scrollHeight - footerHeight;
         let offset;
         
         buttonGoTop.style.visibility = 'visible';
         compactMenu.style.transition = 'width .5s';
-
-        toggleGoTopButton();
         
+        window.addEventListener('load', ()=>{
+            console.log('listener....-> LOAD');
+            controllGoTopButton();
+            controllTopNavBar();
+        })
+        
+        window.addEventListener('scroll', ()=>{
+            console.log('listener....-> SCROLL');
+            controllGoTopButton();
+            controllTopNavBar();
+        })
+        window.addEventListener('resize', ()=>{
+            console.log('listener....-> RESIZE');
+            controllGoTopButton();
+            controllTopNavBar();
+        })
         function openCompactNav() {
             compactMenu.style.width = '100%';
         }
         function closeCompactNav() {
             compactMenu.style.width = '0%';
         }
-
-        window.addEventListener('scroll', ()=>{
-            bottomLimitGoTopButton();            
-            toggleGoTopButton();
+        function controllTopNavBar() {
+            console.log('controllTopNavBar........ call ...')
             if(window.scrollY > 60) {
                 //shrink top nav bar
                 topNavBar.classList.add('shrink');
@@ -232,15 +245,11 @@
             else {
                 topNavBar.classList.remove('shrink');
             }
-        })
-
-        window.addEventListener('resize', ()=>{
-            scrollHeightOffset = document.body.scrollHeight - 110;
-            toggleGoTopButton();
-            bottomLimitGoTopButton();
-        })
-
-        function toggleGoTopButton(){
+        }
+        function controllGoTopButton() {
+            console.log('controllGoTopButton........ call ...');
+            scrollHeightOffset = document.body.scrollHeight - footerHeight;
+            
             if(window.scrollY > window.innerHeight) {
                 console.log('show top Button')
                 buttonGoTop.style.visibility = 'visible';
@@ -249,10 +258,7 @@
                 buttonGoTop.style.visibility = 'hidden';
                 console.log('dont show top button.....')
             }
-        }
 
-        function bottomLimitGoTopButton(){
-            // console.log('.. -> ', document.body.scrollHeight - 110, ' | ', window.scrollY + window.innerHeight);
             offset = scrollHeightOffset - window.scrollY - window.innerHeight;
             console.log(offset);
             if(offset < 0){
