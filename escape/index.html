@@ -15,188 +15,165 @@
 </head>
 
 <body>
-    <header class="head-section">
-        <div class="container">
-            <!-- <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand company-logo" href="#">
-                    <img src="./images/paper-plane.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                    ESCAPE
-                </a>
+    <header class="fixed-top">
+        <nav class="container navbar navbar-expand-lg">
+            <a class="navbar-brand font-weight-bold" href="#"><i class="fa fa-paper-plane mr-2" aria-hidden="true"></i>ESCAPE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa fa-bars" aria-hidden="true" style="color: white;"></i></span>
+            </button>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">AAA</span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav w-100 d-flex justify-content-end">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Clients</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav> -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
+                        <a class="nav-link" href="#">Service</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">Clients</a>
                     </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <section class="hero-section">
+        <div class="container">
             <div class="hero-content">
                 <h2>Can you build the website of my dreams?</h2>
                 <h1>Yup, we can do that.</h1>
                 <button class="btn">Learn More</button>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Feature highlight -->
-    <section class="section">
-        <div class="container">
-            <div class="row feature">
-                <div class="col-md-8 feature-content">
-                    <h1 class="font-weight-light">Web <span class="font-weight-bold">Development</span></h1>
-                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
-                        posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
-                        entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                    <p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
-                        posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim.</p>
+    <section class="feature-container">
+        <div class="section-common feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-right section-common-img feature-img-container">
+                        <img src="./images/flow-branch.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-8 feature-content">
+                        <h1 class="font-weight-light section-common-title">Web <span class="font-weight-bold">Development</span></h1>
+                        <p class="section-common-para">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
+                            posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+                            entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                        <p class="section-common-para">Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
+                            posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim.</p>
+                    </div>
                 </div>
-                <div class="col-md-4 text-right feature-img">
-                    <img src="./images/flow-branch.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="section-common feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 section-common-img feature-img-container">
+                        <img src="./images/users.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-8 feature-content">
+                        <h1 class="font-weight-light section-common-title">Identity <span class="font-weight-bold">Branding</span></h1>
+                        <p class="section-common-para">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
+                            posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+                            entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                        <p class="section-common-para">Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
+                            posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section bg-light">
-        <div class="container">
-            <div class="row feature">
-                <div class="col-md-4 feature-img">
-                    <img src="./images/users.png" class="img-fluid">
-                </div>
-                <div class="col-md-8 feature-content">
-                    <h1 class="font-weight-light">Identity <span class="font-weight-bold">Branding</span></h1>
-                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
-                        posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
-                        entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                    <p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
-                        posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
+    
+    <section class="section-common">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 service-icon">
-                            <img class="service-icon-img" src="./images/icon_people.png" alt="">
+                <div class="col-lg-6">
+                    <div class="row service">
+                        <div class="col-sm-2">
+                            <div class="service-icon">
+                                <img class="service-icon-img" src="./images/icon_people.png" alt="">
+                            </div>
                         </div>
-                        <div class="ml-4 service-content">
-                            <h1>Branding & Identity</h1>
-                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                        <div class="col-sm-10 service-content">
+                            <h1 class="service-title">Branding & Identity</h1>
+                            <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
                                 rhoncus posuere odio in tincidunt.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 service-icon">
-                            <img class="service-icon-img" src="./images/icon_web.png" alt="">
+                <div class="col-lg-6">
+                    <div class="row service">
+                        <div class="col-sm-2">
+                            <div class="service-icon">
+                                <img class="service-icon-img" src="./images/icon_web.png" alt="">
+                            </div>
                         </div>
-                        <div class="ml-4 service-content">
-                            <h1>Web & Graphic Design</h1>
-                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                        <div class="col-sm-10 service-content">
+                            <h1 class="service-title">Web & Graphic Design</h1>
+                            <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
                                 rhoncus posuere odio in tincidunt.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 service-icon">
-                            <img class="service-icon-img" src="./images/icon_mobile.png" alt="">
+                <div class="col-lg-6">
+                    <div class="row service">
+                        <div class="col-sm-2">
+                            <div class="service-icon">
+                                <img class="service-icon-img" src="./images/icon_mobile.png" alt="">
+                            </div>
                         </div>
-                        <div class="ml-4 service-content">
-                            <h1>Mobile App Development</h1>
-                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                        <div class="col-sm-10 service-content">
+                            <h1 class="service-title">Mobile App Development</h1>
+                            <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
                                 rhoncus posuere odio in tincidunt.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 service-icon">
-                            <img class="service-icon-img" src="./images/icon_video.png" alt="">
+                <div class="col-lg-6">
+                    <div class="row service">
+                        <div class="col-sm-2">
+                            <div class="service-icon">
+                                <img class="service-icon-img" src="./images/icon_video.png" alt="">
+                            </div>
                         </div>
-                        <div class="ml-4 service-content">
-                            <h1>Animations</h1>
-                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                        <div class="col-sm-10 service-content">
+                            <h1 class="service-title">Animations</h1>
+                            <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
                                 rhoncus posuere odio in tincidunt.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 service-icon">
-                            <img class="service-icon-img" src="./images/icon_star.png" alt="">
+                <div class="col-lg-6">
+                    <div class="row service">
+                        <div class="col-sm-2">
+                            <div class="service-icon">
+                                <img class="service-icon-img" src="./images/icon_star.png" alt="">
+                            </div>
                         </div>
-                        <div class="ml-4 service-content">
-                            <h1>UI/UX</h1>
-                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                        <div class="col-sm-10 service-content">
+                            <h1 class="service-title">UI/UX</h1>
+                            <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
                                 rhoncus posuere odio in tincidunt.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 service-icon">
-                            <img class="service-icon-img" src="./images/icon_camera.png" alt="">
+                <div class="col-lg-6">
+                    <div class="row service">
+                        <div class="col-sm-2">
+                            <div class="service-icon">
+                                <img class="service-icon-img" src="./images/icon_camera.png" alt="">
+                            </div>
                         </div>
-                        <div class="ml-4 service-content">
-                            <h1>Photography</h1>
-                            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
+                        <div class="col-sm-10 service-content">
+                            <h1 class="service-title">Photography</h1>
+                            <p class="service-description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean
                                 rhoncus posuere odio in tincidunt.</p>
                         </div>
                     </div>
@@ -205,55 +182,78 @@
         </div>
     </section>
 
-    <section class="section testimonial bg-light">
+    
+    <section class="section-common bg-light">
         <div class="container">
-            <div class="text-center testimonial-title">
-                <h1><span class="font-weight-light">Awesome</span> Clients</h1>
-                <p>See what nice things our clients said about us.</p>
-            </div>
-            <div class="row">
-                <div class="col-4 mb-5">
-                    <div class="testimonial-photo" style="background-image: url(./images/01.jpg);"></div>
-                </div>
-                <div class="col-8 mb-5">
-                    <div class="quote-bg arrow-left">
-                        <blockquote class="quote">“Proin iaculis purus consequat sem cure digni ssim donec porttitora
-                            entum suscipit aenean rhoncus.”</blockquote>
+            <h1 class="section-common-title"><span class="font-weight-light">Awesome</span> Clients</h1>
+            <p class="section-common-sub-title">See what nice things our clients said about us.</p>
+            <div class="testimonial-container mt-5">
+                <div class="row testimonial">
+                    <div class="col-sm-4 mb-5 testimonial-photo-container">
+                        <div class="testimonial-photo" style="background-image: url(./images/01.jpg);"></div>
                     </div>
-                    <p class="quote-source mt-4">- Jamie Richardson, Founder of Cocoa Media</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-8 mb-5">
-                    <div class="quote-bg arrow-right">
-                        <blockquote class="quote">“Proin iaculis purus consequat sem cure digni ssim donec porttitora
-                            entum suscipit aenean rhoncus.”</blockquote>
+                    <div class="col-sm-8 testimonial-content">
+                        <div class="testimonial-quote-bg">
+                            <blockquote class="testimonial-quote">“Proin iaculis purus consequat sem cure digni ssim donec porttitora
+                                entum suscipit aenean rhoncus.”</blockquote>
+                            <p class="testimonial-quote-source mt-4">- Jamie Richardson, Founder of Cocoa Media</p>
+                        </div>
                     </div>
-                    <p class="quote-source mt-4">- Bart Thompson, Founder of Rainel</p>
                 </div>
-                <div class="col-4 mb-5">
-                    <div class="testimonial-photo float-right" style="background-image: url(./images/01.jpg);"></div>
+                <div class="row testimonial">
+                    <div class="col-sm-4 mb-5 testimonial-photo-container">
+                        <div class="testimonial-photo" style="background-image: url(./images/01.jpg);"></div>
+                    </div>
+                    <div class="col-sm-8 testimonial-content">
+                        <div class="testimonial-quote-bg">
+                            <blockquote class="testimonial-quote">“Proin iaculis purus consequat sem cure digni ssim donec porttitora
+                                entum suscipit aenean rhoncus.”</blockquote>
+                            <p class="testimonial-quote-source mt-4">- Jamie Richardson, Founder of Cocoa Media</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row testimonial">
+                    <div class="col-sm-8 testimonial-content">
+                        <div class="testimonial-quote-bg">
+                            <blockquote class="testimonial-quote">“Proin iaculis purus consequat sem cure digni ssim donec porttitora
+                                entum suscipit aenean rhoncus.”</blockquote>
+                            <p class="testimonial-quote-source mt-4">- Bart Thompson, Founder of Rainel</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mb-5 testimonial-photo-container">
+                        <div class="testimonial-photo" style="background-image: url(./images/01.jpg);"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- <section class="marketplaces">
+    
+    <section class="section-common marketplaces">
         <div class="container">
-            <div class="d-flex justify-content-center">
-                <img src="./images/logo_envato.png" alt="" class="img-fluid mx-2">
-                <img src="./images/logo_wordpress.png" alt="" class="img-fluid mx-2">
-                <img src="./images/logo_tutplus.png" alt="" class="img-fluid mx-2">
-                <img src="./images/logo_microlancer.png" alt="" class="img-fluid mx-2">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <img src="./images/logo_envato.png" alt="" class="img-fluid mx-auto">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="./images/logo_wordpress.png" alt="" class="img-fluid mx-auto">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="./images/logo_tutplus.png" alt="" class="img-fluid mx-auto">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="./images/logo_microlancer.png" alt="" class="img-fluid mx-auto">
+                </div> 
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <section class="section our-team">
+    
+    <section class="section-common our-team">
         <div class="container">
             <div class="our-team-title">
-                <h1><span class="font-weight-light">Amazing</span> Team</h1>
-                <p>These wonderful people make work enjoyable.</p>
+                <h1 class="section-common-title"><span class="font-weight-light">Amazing</span> Team</h1>
+                <p class="section-common-description">These wonderful people make work enjoyable.</p>
             </div>
             <div>
                 <div class="row">
@@ -263,15 +263,21 @@
                             <h2>Kimberly Thompson</h2>
                             <h3>Marketer</h3>
                             <div class="d-flex justify-content-center personal-social">
-                                <div class="icon-wrapper">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                </div>
-                                <div class="icon-wrapper">
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                </div>
-                                <div class="icon-wrapper">
-                                    <a href=""><i class="fa fa-pinterest"></i></a>
-                                </div>
+                                <a href="">
+                                    <div class="icon-wrapper">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="icon-wrapper">
+                                        <i class="fa fa-facebook"></i>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="icon-wrapper">
+                                        <i class="fa fa-pinterest"></i>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -281,15 +287,21 @@
                             <h2>Rico Massimo</h2>
                             <h3>Coder</h3>
                             <div class="d-flex justify-content-center personal-social">
-                                <div class="icon-wrapper">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                </div>
-                                <div class="icon-wrapper">
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                </div>
-                                <div class="icon-wrapper">
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                </div>
+                                <a href="">
+                                    <div class="icon-wrapper">
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="icon-wrapper">
+                                        <i class="fa fa-facebook"></i>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="icon-wrapper">
+                                        <i class="fa fa-google-plus"></i>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -299,12 +311,16 @@
                             <h2>Uku Masson</h2>
                             <h3>Graphic Designer</h3>
                             <div class="d-flex justify-content-center personal-social">
-                                <div class="icon-wrapper">
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                </div>
-                                <div class="icon-wrapper">
-                                    <a href=""><i class="fa fa-pinterest"></i></a>
-                                </div>
+                                <a href="">
+                                    <div class="icon-wrapper">
+                                        <i class="fa fa-facebook"></i>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="icon-wrapper">
+                                        <i class="fa fa-pinterest"></i>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -317,44 +333,54 @@
         </div>
     </section>
 
-    <section class="section infos">
+    
+    <section class="section-common infos">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h1><span class="font-weight-light">Say</span> Hello</h1>
-                    <p>Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)</p>
+                <div class="col-lg-6">
+                    <h1 class="section-common-title"><span class="font-weight-light">Say</span> Hello</h1>
+                    <p class="section-common-description info-greetings">Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)</p>
                     <div class="row">
-                        <div class="col-6 contact">
+                        <div class="col-sm-6 contact">
                             <p>
                                 <i class="fa fa-mobile-phone"></i>(416) 555-0000
                             </p>
                         </div>
-                        <div class="col-6 contact">
+                        <div class="col-sm-6 contact">
                             <p>
                                 <i class="fa fa-envelope"></i>hello@domain.com
                             </p>
                         </div>
-                        <div class="col-6 contact">
+                        <div class="col-sm-6 contact">
                             <p>
                                 <i class="fa fa-twitter"></i>@domain
                             </p>
                         </div>
-                        <div class="col-6 contact"><p>
-                            <i class="fa fa-facebook"></i>facebook.com/domain
-                        </p></div>
-                        <div class="col-6 contact"><p>
-                            <i class="fa fa-google-plus-official"></i>plus.com/domain
-                        </p></div>
-                        <div class="col-6 contact"><p>
-                            <i class="fa fa-pinterest"></i>pinterest.com/domain
-                        </p></div>
+                        <div class="col-sm-6 contact">
+                            <p>
+                                <i class="fa fa-facebook"></i>facebook.com/domain
+                            </p>
+                        </div>
+                        <div class="col-sm-6 contact">
+                            <p>
+                                <i class="fa fa-google-plus-official"></i>plus.com/domain
+                            </p>
+                        </div>
+                        <div class="col-sm-6 contact">
+                            <p>
+                                <i class="fa fa-pinterest"></i>pinterest.com/domain
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 mt-3">
+                <div class="col-lg-6 mt-3">
                     <form action="" class="form-group message-form">
-                        <input type="text" name="fullname" id="fullname" class="form-control form-field-padd mb-4" placeholder="Your Name">
-                        <input type="email" name="email" id="email" class="form-control form-field-padd mb-4" placeholder="Your Email">
-                        <textarea name="message" id="message" cols="30" rows="6" class="form-control form-field-padd" placeholder="Your Message"></textarea>
+                        <input type="text" name="fullname" id="fullname" class="form-control form-field-padd mb-4"
+                            placeholder="Your Name">
+                        <input type="email" name="email" id="email" class="form-control form-field-padd mb-4"
+                            placeholder="Your Email">
+                        <textarea name="message" id="message" cols="30" rows="6" class="form-control form-field-padd"
+                            placeholder="Your Message"></textarea>
                     </form>
                 </div>
             </div>
@@ -362,7 +388,7 @@
     </section>
 
     <footer>
-        <p>© 2014 Escape by FreebiesXpress • Made In Toronto</p>
+        <p>Desgin credit: Escape PSD by FreebiesXpress</p>
     </footer>
 
 
