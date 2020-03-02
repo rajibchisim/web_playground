@@ -14,22 +14,25 @@
     <link rel="stylesheet" href="./bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Jirraf Site</title>
+    <title>Jirraf School | Tommorow land for kids!</title>
 </head>
 
 <body>
-    <header class="container-fluid bg-yellow">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg top-nav">
-                <a class="navbar-brand" href="#"><img src="./images/logo_education.png" alt="logo"
+    <div id="cd" style="display: none; height: 100vh; width: 100vw; position: fixed; background-color: rgba(0, 0, 0, .5); z-index: 2000;">
+        <div style="background-color: #ffd338; height: 100vh; width: 50vw;"></div>
+    </div>
+    <header class="bg-yellow">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md top-nav">
+                <a class="navbar-brand brand-logo" href="#"><img src="./images/logo_education.png" alt="logo"
                         class="img-fluid"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    aria-label="Toggle navigation" style="padding: 0;">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars txt-white" aria-hidden="true" style="margin-top: 6px;"></i></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse navbar-collapse-abs bg-yellow" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -53,28 +56,29 @@
                             <a class="nav-link" href="#">Contacts</a>
                         </li>
                     </ul>
-                </div>
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown link
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown link
-                    </a>
+                    <div class="top-dropdown">
+                        <div class="dropdown">
+                            <a class="btn nav-link-user" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-user" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Login</a>
+                                <a class="dropdown-item" href="#">Register</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn nav-link-search" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </a>
 
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-menu dropdown-menu-search" aria-labelledby="dropdownMenuLink">
+                                <form action="">
+                                    <input type="text" placeholder="Search">
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -83,29 +87,42 @@
 
 
     <!-- Banner -->
-    <section class="section banner">
-        <h1 class="txt-ocean text-center banner-title">Tommorow land for Kids Always</h1>
+    <section class="banner">
+        <div class="banner-cloud-top"></div>
+        <div class="bg-white banner-content">
+            <div class="container-fluid">
+                <h1 class="txt-ocean text-center banner-title">Tommorow land for Kids Always</h1>
+            </div>
+        </div>
+        <div class="banner-cloud-bottom"></div>
+        <div class="arrow">
+            <p>SCROLL</p>
+            <img src="./images/arrow-point-down.png" alt="" class="arrow-img-long">
+            <img src="./images/arrow-point-down-short.png" alt="" class="arrow-img-short">
+        </div>
     </section>
     <!-- Banner END -->
     <!-- Hero -->
     <div class="section hero">
-        <section class="container">
+        <section class="container-fluid">
             <h1 class="section-title">OUR DESIRATION ON KID EDUCATION</h1>
             <hr class="w-25 dashed-line">
             <div class="row">
                 <div class="col-md-6">
-                    <h5 class="section-title-sub">About Jirraf Schools</h5>
-                    <p class="section-paragraph">As a word from our heart, we love to dedicate for Kids the valuable things in Life. A great
+                    <h5 class="section-title-sub txt-dark">About Jirraf Schools</h5>
+                    <p class="section-paragraph">As a word from our heart, we love to dedicate for Kids the valuable
+                        things in Life. A great
                         education is a must for a solid developments in both soul and mind for kids. We go with kids to
                         play, learn, and grow better.</p>
-                    <p class="section-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    <p class="section-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla
                         pariatur. </p>
                     <a href="#" class="btn sp-btn txt-meroon">
                         DISCOVERY
                     </a>
                 </div>
-                <div class="col-md-6">
-                    <img src="./images/570x320.jpg" class="img-fluid">
+                <div class="col-md-6 hero-img-container">
+                    <img src="./images/img_570x320.jpg" class="img-fluid">
                 </div>
             </div>
         </section>
@@ -114,24 +131,44 @@
 
     <!-- Feature -->
     <div class="section features">
-        <section class="container">
+        <section class="container-fluid">
             <h1 class="section-title">OUR DESIRATION ON KID EDUCATION</h1>
             <hr class="w-25 dashed-line">
             <div class="row">
-                <div class="col-md-3 feature">
-                    <img class="img-fluid mb-2" src="./images/circle_gray.png" alt="img">
+                <div class="col-md-3 col-6 feature">
+                    <div class="circle-card mx-auto">
+                        <img class="img-fluid" src="./images/circle_outline.png">
+                        <div class="circle-card-img" style="background-color: royalblue;">
+                            <img class="img-fluid mb-2" src="./images/img_100x100_1.jpg" alt="img">
+                        </div>
+                    </div>
                     <h5 class="section-title-sub">Best-For-Kids<br>Programs</h5>
                 </div>
-                <div class="col-md-3 feature">
-                    <img class="img-fluid mb-2" src="./images/circle_gray.png" alt="img">
+                <div class="col-md-3 col-6 feature">
+                    <div class="circle-card mx-auto">
+                        <img class="img-fluid" src="./images/circle_outline.png">
+                        <div class="circle-card-img" style="background-color: royalblue;">
+                            <img class="img-fluid mb-2" src="./images/img_100x100_2.jpg" alt="img">
+                        </div>
+                    </div>
                     <h5 class="section-title-sub">Kid-Hearted<br>Teachers</h5>
                 </div>
-                <div class="col-md-3 feature">
-                    <img class="img-fluid mb-2" src="./images/circle_gray.png" alt="img">
+                <div class="col-md-3 col-6 feature">
+                    <div class="circle-card mx-auto">
+                        <img class="img-fluid" src="./images/circle_outline.png">
+                        <div class="circle-card-img" style="background-color: royalblue;">
+                            <img class="img-fluid mb-2" src="./images/img_100x100_3.jpg" alt="img">
+                        </div>
+                    </div>
                     <h5 class="section-title-sub">Inspirational<br>Environment</h5>
                 </div>
-                <div class="col-md-3 feature">
-                    <img class="img-fluid mb-2" src="./images/circle_brown.png" alt="img">
+                <div class="col-md-3 col-6 feature">
+                    <div class="circle-card mx-auto">
+                        <img class="img-fluid" src="./images/circle_outline.png">
+                        <div class="circle-card-img" style="background-color: royalblue;">
+                            <img class="img-fluid mb-2" src="./images/img_100x100_4.jpg" alt="img">
+                        </div>
+                    </div>
                     <h5 class="section-title-sub">Top School<br>Belong</h5>
                 </div>
             </div>
@@ -142,35 +179,49 @@
 
     <!-- Courses -->
     <div class="section Courses">
-        <section class="container">
+        <section class="container-fluid">
             <h1 class="section-title">FEATURED COURSES WE ARE OFFERING</h1>
-            <div class="row">
+            <hr class="d-block d-lg-none w-50 dashed-line">
+            <div class="row d-none d-lg-block">
                 <div class="col-6" style="border-right: 4px dashed white; height: 40px;">
 
                 </div>
                 <div class="col-12">
-                        <div style="width: 80%; margin-left: auto; margin-right: auto; border-bottom: 4px dashed white;"></div>
+                    <div style="width: 80%; margin-left: auto; margin-right: auto; border-bottom: 4px dashed white;">
+                    </div>
                 </div>
                 <div class="col-12">
-                    <div class="d-flex justify-content-streach" style="width: 80%; margin-left: auto; margin-right: auto;">
-                        <div style="border-left: 4px dashed white; border-right: 4px dashed white; height: 40px; flex: 1;"></div>
+                    <div class="d-flex justify-content-streach"
+                        style="width: 80%; margin-left: auto; margin-right: auto;">
+                        <div
+                            style="border-left: 4px dashed white; border-right: 4px dashed white; height: 40px; flex: 1;">
+                        </div>
                         <div style="flex: 1;"></div>
-                        <div style="border-left: 4px dashed white; border-right: 4px dashed white; height: 40px; flex: 1;"></div>
+                        <div
+                            style="border-left: 4px dashed white; border-right: 4px dashed white; height: 40px; flex: 1;">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row align-items-stretch">
-                <div class="col-md-3">
+                <div class="col-sm-6 col-lg-3">
                     <div class="card course">
-                        <div class="card-header course-topbar bg-ocean txt-white">7:00AM - 11:00AM <i class="fa fa-paint-brush float-right" aria-hidden="true"></i></div>
-                        <img class="card-img-top course-thumbnail" src="./images/img_270x170.jpg" alt="img">
+                        <div class="card-header course-topbar bg-ocean txt-white">7:00AM - 11:00AM 
+                            <i class="float-right" aria-hidden="true">
+                                <svg class="course-icon" viewBox="0 0 32 32">
+                                    <use xlink:href="./images/course-icon.svg#paint-palette-and-brush" />
+                                </svg>
+                            </i>
+                        </div>
+                        <img class="card-img-top course-thumbnail" src="./images/feature_1.jpg" alt="img">
                         <div class="card-body course-body">
                             <div class="course-badge bg-ocean">
                                 <p class="price">$59</p>
                                 <p class="duration">p/w</p>
                             </div>
                             <h5 class="card-title course-title txt-ocean">Art Learning</h5>
-                            <p class="card-text course-details">10 lessons to teaach little kids way to create simple art as crafting and paper art.</p>
+                            <p class="card-text course-details">10 lessons to teaach little kids way to create simple
+                                art as crafting and paper art.</p>
                             <hr>
                             <div class="course-footer">
                                 <p>Age: 5-7 Years</p>
@@ -179,17 +230,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-6 col-lg-3">
                     <div class="card course">
-                        <div class="card-header course-topbar bg-green txt-white">7:00AM - 11:00AM <i class="fa fa-paint-brush float-right" aria-hidden="true"></i></div>
-                        <img class="card-img-top course-thumbnail" src="./images/img_270x170.jpg" alt="img">
+                        <div class="card-header course-topbar bg-green txt-white">7:00AM - 11:00AM 
+                            <i class="float-right" aria-hidden="true">
+                                <svg class="course-icon" viewBox="0 0 32 32">
+                                    <use xlink:href="./images/course-icon.svg#ruler" />
+                                </svg>
+                            </i>
+                        </div>
+                        <img class="card-img-top course-thumbnail" src="./images/feature_3.jpg" alt="img">
                         <div class="card-body course-body">
                             <div class="course-badge bg-green">
                                 <p class="price">$59</p>
                                 <p class="duration">p/w</p>
                             </div>
                             <h5 class="card-title course-title">Math</h5>
-                            <p class="card-text course-details">Offering 30 Maths lessons in English with diversified topics. </p>
+                            <p class="card-text course-details">Offering 30 Maths lessons in English with diversified
+                                topics. </p>
                             <hr>
                             <div class="course-footer">
                                 <p>Age: 5-7 Years</p>
@@ -198,17 +256,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-6 col-lg-3">
                     <div class="card course">
-                        <div class="card-header course-topbar bg-meroon txt-white">7:00AM - 11:00AM <i class="fa fa-paint-brush float-right" aria-hidden="true"></i> </div>
-                        <img class="card-img-top course-thumbnail" src="./images/img_270x170.jpg" alt="img">
+                        <div class="card-header course-topbar bg-meroon txt-white">7:00AM - 11:00AM 
+                            <i class="float-right" aria-hidden="true">
+                                <svg class="course-icon" viewBox="0 0 32 32">
+                                    <use xlink:href="./images/course-icon.svg#atom" />
+                                </svg>
+                            </i> 
+                        </div>
+                        <img class="card-img-top course-thumbnail" src="./images/feature_2.jpg" alt="img">
                         <div class="card-body course-body">
                             <div class="course-badge bg-meroon">
                                 <p class="price">$59</p>
                                 <p class="duration">p/w</p>
                             </div>
                             <h5 class="card-title course-title">Science</h5>
-                            <p class="card-text course-details">10 lessons to teaach little kids way to create simple art as crafting and paper art.</p>
+                            <p class="card-text course-details">10 lessons to teaach little kids way to create simple
+                                art as crafting and paper art.</p>
                             <hr>
                             <div class="course-footer">
                                 <p>Age: 5-7 Years</p>
@@ -217,17 +282,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-6 col-lg-3">
                     <div class="card course">
-                        <div class="card-header course-topbar bg-yellow txt-white">7:00AM - 11:00AM <i class="fa fa-paint-brush float-right" aria-hidden="true"></i></div>
-                        <img class="card-img-top course-thumbnail" src="./images/img_270x170.jpg" alt="img">
+                        <div class="card-header course-topbar bg-yellow txt-white">7:00AM - 11:00AM 
+                            <i class="float-right" aria-hidden="true">
+                                <svg class="course-icon" viewBox="0 0 32 32">
+                                    <use xlink:href="./images/course-icon.svg#idea" />
+                                </svg>
+                            </i>
+                        </div>
+                        <img class="card-img-top course-thumbnail" src="./images/feature_4.jpg" alt="img">
                         <div class="card-body course-body">
                             <div class="course-badge bg-yellow">
                                 <p class="price">$59</p>
                                 <p class="duration">p/w</p>
                             </div>
                             <h5 class="card-title course-title">Environment Skills</h5>
-                            <p class="card-text course-details">10 lessons to teaach little kids way to create simple art as crafting and paper art.</p>
+                            <p class="card-text course-details">10 lessons to teaach little kids way to create simple
+                                art as crafting and paper art.</p>
                             <hr>
                             <div class="course-footer">
                                 <p>Age: 5-7 Years</p>
@@ -244,38 +316,36 @@
     <!-- Courses END -->
 
 
-    
+
 
     <section class="section memorable">
-        <div class="container">
+        <div class="container-fluid">
             <h1 class="section-title">Memorable moments</h1>
             <hr class="w-25 dashed-line">
-            <div class="row mb-4">
-                <div class="col-md-3">
-                    <img src="./images/270x200.jpg" class="img-fluid rounded">
+            <div class="row">
+                <div class="col-sm-3 col-6 memory-thumb">
+                    <img src="./images/memory1.jpg" class="img-fluid rounded">
                 </div>
-                <div class="col-md-3">
-                    <img src="./images/270x200.jpg" class="img-fluid rounded">
+                <div class="col-sm-3 col-6 memory-thumb">
+                    <img src="./images/memory2.jpg" class="img-fluid rounded">
                 </div>
-                <div class="col-md-3">
-                    <img src="./images/270x200.jpg" class="img-fluid rounded">
+                <div class="col-sm-3 col-6 memory-thumb">
+                    <img src="./images/memory3.jpg" class="img-fluid rounded">
                 </div>
-                <div class="col-md-3">
-                    <img src="./images/270x200.jpg" class="img-fluid rounded">
+                <div class="col-sm-3 col-6 memory-thumb">
+                    <img src="./images/memory4.jpg" class="img-fluid rounded">
                 </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-3">
-                    <img src="./images/270x200.jpg" class="img-fluid rounded">
+                <div class="d-none d-sm-block col-sm-3 col-6 memory-thumb">
+                    <img src="./images/memory5.jpg" class="img-fluid rounded">
                 </div>
-                <div class="col-md-3">
-                    <img src="./images/270x200.jpg" class="img-fluid rounded">
+                <div class="d-none d-sm-block col-sm-3 col-6 memory-thumb">
+                    <img src="./images/memory6.jpg" class="img-fluid rounded">
                 </div>
-                <div class="col-md-3">
-                    <img src="./images/270x200.jpg" class="img-fluid rounded">
+                <div class="d-none d-sm-block col-sm-3 col-6 memory-thumb">
+                    <img src="./images/memory7.jpg" class="img-fluid rounded">
                 </div>
-                <div class="col-md-3">
-                    <img src="./images/270x200.jpg" class="img-fluid rounded">
+                <div class="d-none d-sm-block col-sm-3 col-6 memory-thumb">
+                    <img src="./images/memory8.jpg" class="img-fluid rounded">
                 </div>
             </div>
             <div>
@@ -285,127 +355,170 @@
     </section>
 
     <section class="section teachers">
-        <div class="container">
+        <div class="container-fluid">
             <div class="text-center testimonial">
                 <div><i class="fa fa-twitter quote-icon txt-blue-tweet"></i></div>
-                <div><a class="txt-blue-tweet">http://t.co/Zxxbb3ssxA</a></div>
-                
-                <div class="my-4"><quote>“ Great embracing among school, parents and kids at Giraffe! We love to join outdoor<br>
-activities the school offered, useful and meaningful. ”</quote></div>
+                <div><a class="txt-blue-tweet">follow on twitter</a></div>
+
+                <div class="my-4">
+                    <quote>“ Great embracing among school, parents and kids at Giraffe! We love to join outdoor<br>
+                        activities the school offered, useful and meaningful. ”</quote>
+                </div>
                 <div class="txt-blue-tweet">
                     <a>#GiraffeForKids</a>
-                    <a>#EducationOfChildren</a> 
+                    <a>#EducationOfChildren</a>
                     <a>GiraTweets</a>
                 </div>
             </div>
             <h1 class="section-title">Who stand by Your Kids Always</h1>
             <hr class="w-25 dashed-line">
             <div class="row mb-5">
-                <div class="col-md-6 row teacher">
-                    <div class="col">
-                        <img src="./images/240x290.jpg" class="img-fluid rounded">
-                    </div>
-                    <div class="col">
-                        <h1 class="section-title-sub text-left txt-blue-tweet">Linda Glendell</h1>
-                        <h2>Life Skills</h2>
-                        <hr>
-                        <p>Linda is known as a full of energy teacher with enthusiastic lessons, she motivates your child to learn and create in the best way.</p>
-                        <div class="social-teacher">
-                            <a><i class="fa fa-facebook txt-blue-fb" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-twitter txt-blue-tweet" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-google-plus txt-meroon" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-tumblr txt-blue-tumblr" aria-hidden="true"></i></a>
+                <div class="col-md-6 teacher">
+                    <div class="row">
+                        <div class="col">
+                            <img src="./images/teacher_1.jpg" class="img-fluid rounded">
                         </div>
-                        <div><a class="follow-teacher">Follow me :-)</a></div>
+                        <div class="col teacher-content">
+                            <h1 class="section-title-sub text-left txt-blue-tweet">Linda Glendell</h1>
+                            <h2>Life Skills</h2>
+                            <hr>
+                            <div class="teacher-sm-hide">
+                                <p>Linda is known as a full of energy teacher with enthusiastic lessons, she motivates
+                                    your
+                                    child to learn and create in the best way.</p>
+                                <div>
+                                </div>
+                            </div>
+                            <div class="social-teacher">
+                                <div>
+                                    <a><i class="fa fa-facebook txt-blue-fb" aria-hidden="true"></i></a>
+                                    <a><i class="fa fa-twitter txt-blue-tweet" aria-hidden="true"></i></a>
+                                    <a><i class="fa fa-google-plus txt-meroon" aria-hidden="true"></i></a>
+                                    <a><i class="fa fa-tumblr txt-blue-tumblr" aria-hidden="true"></i></a>
+                                </div>
+                                <div><a class="follow-teacher">Follow me :-)</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-sm-show">
+                        <p>Linda is known as a full of energy teacher with enthusiastic lessons, she motivates your
+                            child to learn and create in the best way.</p>
+                        <div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 row teacher">
-                    <div class="col">
-                        <img src="./images/240x290.jpg" class="img-fluid rounded">
-                    </div>
-                    <div class="col">
-                        <h1 class="section-title-sub text-left txt-green">Jesical Alba</h1>
-                        <h2>Music Teacher</h2>
-                        <hr>
-                        <p>Jesical is known as a full of energy teacher with music lessons, she motivates your child to learn and create in the best way.</p>
-                        <div class="social-teacher">
-                            <a><i class="fa fa-facebook txt-blue-fb" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-twitter txt-blue-tweet" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-google-plus txt-meroon" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-tumblr txt-blue-tumblr" aria-hidden="true"></i></a>
+
+                <div class="col-md-6 teacher">
+                    <div class="row">
+                        <div class="col">
+                            <img src="./images/teacher_4.jpg" class="img-fluid rounded">
                         </div>
-                        <div><a class="follow-teacher">Follow me :-)</a></div>
+                        <div class="col teacher-content">
+                            <h1 class="section-title-sub text-left txt-green">Jesical Alba</h1>
+                            <h2>Music Teacher</h2>
+                            <hr>
+                            <p class="teacher-sm-hide">Jesical is known as a full of energy teacher with music lessons,
+                                she motivates your child
+                                to
+                                learn and create in the best way.</p>
+                            <div class="social-teacher">
+                                <a><i class="fa fa-facebook txt-blue-fb" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-twitter txt-blue-tweet" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-google-plus txt-meroon" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-tumblr txt-blue-tumblr" aria-hidden="true"></i></a>
+                            </div>
+                            <div><a class="follow-teacher">Follow me :-)</a></div>
+                        </div>
                     </div>
+                    <p class="teacher-sm-show">Jesical is known as a full of energy teacher with music lessons, she
+                        motivates your child to
+                        learn and create in the best way.</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 row teacher">
-                    <div class="col">
-                        <img src="./images/240x290.jpg" class="img-fluid rounded">
-                    </div>
-                    <div class="col">
-                        <h1 class="section-title-sub text-left txt-meroon">Jack Daniels</h1>
-                        <h2>Sciences teacher</h2>
-                        <hr>
-                        <p>Jack is known as a full of energy teacher with sciences lessons, she motivates your child to learn and create in the best way.</p>
-                        <div class="social-teacher">
-                            <a><i class="fa fa-facebook txt-blue-fb" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-twitter txt-blue-tweet" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-google-plus txt-meroon" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-tumblr txt-blue-tumblr" aria-hidden="true"></i></a>
+                <div class="col-md-6 teacher">
+                    <div class="row">
+                        <div class="col">
+                            <img src="./images/teacher_2.jpg" class="img-fluid rounded">
                         </div>
-                        <div><a class="follow-teacher">Follow me :-)</a></div>
+                        <div class="col teacher-content">
+                            <h1 class="section-title-sub text-left txt-meroon">Jack Daniels</h1>
+                            <h2>Sciences teacher</h2>
+                            <hr>
+                            <p class="teacher-sm-hide">Jack is known as a full of energy teacher with sciences lessons,
+                                she motivates your child
+                                to
+                                learn and create in the best way.</p>
+                            <div class="social-teacher">
+                                <a><i class="fa fa-facebook txt-blue-fb" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-twitter txt-blue-tweet" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-google-plus txt-meroon" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-tumblr txt-blue-tumblr" aria-hidden="true"></i></a>
+                            </div>
+                            <div><a class="follow-teacher">Follow me :-)</a></div>
+                        </div>
                     </div>
+                    <p class="teacher-sm-show">Jack is known as a full of energy teacher with sciences lessons, she
+                        motivates your child
+                        to
+                        learn and create in the best way.</p>
                 </div>
-                <div class="col-md-6 row teacher">
-                    <div class="col">
-                        <img src="./images/240x290.jpg" class="img-fluid rounded">
-                    </div>
-                    <div class="col">
-                        <h1 class="section-title-sub text-left txt-yellow">Phill Rose</h1>
-                        <h2>Math teacher</h2>
-                        <hr>
-                        <p>Phill is known as a full of energy teacher with music lessons, she motivates your child to learn and create in the best way.</p>
-                        <div class="social-teacher">
-                            <a><i class="fa fa-facebook txt-blue-fb" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-twitter txt-blue-tweet" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-google-plus txt-meroon" aria-hidden="true"></i></a>
-                            <a><i class="fa fa-tumblr txt-blue-tumblr" aria-hidden="true"></i></a>
+                <div class="col-md-6 teacher">
+                    <div class="row">
+                        <div class="col">
+                            <img src="./images/teacher_3.jpg" class="img-fluid rounded">
                         </div>
-                        <div><a class="follow-teacher">Follow me :-)</a></div>
+                        <div class="col teacher-content">
+                            <h1 class="section-title-sub text-left txt-yellow">Phill Rose</h1>
+                            <h2>Math teacher</h2>
+                            <hr>
+                            <p class="teacher-sm-hide">Phill is known as a full of energy teacher with music lessons,
+                                she motivates your child
+                                to
+                                learn and create in the best way.</p>
+                            <div class="social-teacher">
+                                <a><i class="fa fa-facebook txt-blue-fb" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-twitter txt-blue-tweet" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-google-plus txt-meroon" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-tumblr txt-blue-tumblr" aria-hidden="true"></i></a>
+                            </div>
+                            <div><a class="follow-teacher">Follow me :-)</a></div>
+                        </div>
                     </div>
+                    <p class="teacher-sm-show">Phill is known as a full of energy teacher with music lessons, she
+                        motivates your child
+                        to
+                        learn and create in the best way.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="section achievment">
-        <div class="container">
+        <div class="container-fluid">
             <h1 class="section-title">What we did?</h1>
             <hr class="w-25 dashed-line">
             <div class="row">
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 text-center">
                     <div class="info-numbers">
                         <img class="img-fluid" src="./images/brush_blue.png" alt="">
                         <h2>8,322</h2>
                     </div>
                     <h3 class="section-title-sub">TEACHING HOURS</h3>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 text-center">
                     <div class="info-numbers">
                         <img class="img-fluid" src="./images/brush_green.png" alt="">
                         <h2>1,425</h2>
                     </div>
                     <h3 class="section-title-sub">MEALS PER YEAR</h3>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 text-center">
                     <div class="info-numbers">
                         <img class="img-fluid" src="./images/brush_meroon.png" alt="">
                         <h2>5,121</h2>
                     </div>
                     <h3 class="section-title-sub">LESSONS</h3>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-6 text-center">
                     <div class="info-numbers">
                         <img class="img-fluid" src="./images/brush_yellow.png" alt="">
                         <h2>600</h2>
@@ -417,12 +530,12 @@ activities the school offered, useful and meaningful. ”</quote></div>
     </section>
 
     <section class="section events">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-lg-5">
                     <h1 class="section-title">EVENTS TIMELINE</h1>
                     <hr class="w-25 dashed-line">
-                    <div class="d-flex mb-2 event">
+                    <div class="d-flex event">
                         <div class="circle-card">
                             <img class="img-fluid" src="./images/circle_outline.png">
                             <div class="circle-card-img bg-blue-tweet"></div>
@@ -431,13 +544,14 @@ activities the school offered, useful and meaningful. ”</quote></div>
                                 <p class="circle-card-text-secondary">AUG</p>
                             </div>
                         </div>
-                        <div class="event-details ml-4 mt-3">
+                        <div class="event-details">
                             <h1 class="section-title-sub txt-dark">Arts Celebration Night</h1>
-                            <p class="timing"><i class="fa fa-clock-o mr-2 txt-blue-tweet"></i>Starting <span class="txt-blue-tweet ml-2">7:00 Pm</span></p>
+                            <p class="timing"><i class="fa fa-clock-o mr-2 txt-blue-tweet"></i>Starting <span
+                                    class="txt-blue-tweet ml-2">7:00 Pm</span></p>
                         </div>
                     </div>
                     <!-- event end -->
-                    <div class="d-flex mb-3 event">
+                    <div class="d-flex event">
                         <div class="circle-card">
                             <img class="img-fluid" src="./images/circle_outline.png">
                             <div class="circle-card-img bg-green"></div>
@@ -446,13 +560,14 @@ activities the school offered, useful and meaningful. ”</quote></div>
                                 <p class="circle-card-text-secondary">AUG</p>
                             </div>
                         </div>
-                        <div class="event-details ml-4 mt-3">
+                        <div class="event-details">
                             <h1 class="section-title-sub txt-dark">Parents in Kids' Sneakers Day</h1>
-                            <p class="timing"><i class="fa fa-clock-o mr-2 txt-blue-tweet"></i>Starting <span class="txt-blue-tweet ml-2">8:00AM-5:00 Pm</span></p>
+                            <p class="timing"><i class="fa fa-clock-o mr-2 txt-blue-tweet"></i>Starting <span
+                                    class="txt-blue-tweet ml-2">8:00AM-5:00 Pm</span></p>
                         </div>
                     </div>
                     <!-- event end -->
-                    <div class="d-flex mb-3 event">
+                    <div class="d-flex event">
                         <div class="circle-card">
                             <img class="img-fluid" src="./images/circle_outline.png">
                             <div class="circle-card-img bg-yellow"></div>
@@ -461,15 +576,17 @@ activities the school offered, useful and meaningful. ”</quote></div>
                                 <p class="circle-card-text-secondary">AUG</p>
                             </div>
                         </div>
-                        <div class="event-details ml-4 mt-3">
+                        <div class="event-details">
                             <h1 class="section-title-sub txt-dark">Coming to Kindergarten</h1>
-                            <p class="timing"><i class="fa fa-clock-o mr-2 txt-blue-tweet"></i>Starting <span class="txt-blue-tweet ml-2">8:00AM-5:00 Pm</span></p>
-                            <p class="details">The special program of transition activities enables the entire kindergarten team to get to know the new class of children.</p>
+                            <p class="timing"><i class="fa fa-clock-o mr-2 txt-blue-tweet"></i>Starting <span
+                                    class="txt-blue-tweet ml-2">8:00AM-5:00 Pm</span></p>
+                            <p class="details">The special program of transition activities enables the entire
+                                kindergarten team to get to know the new class of children.</p>
                             <div><a class="register-event-link">Register now</a></div>
                         </div>
                     </div>
                     <!-- event end -->
-                    <div class="d-flex event mb-4">
+                    <div class="d-flex event">
                         <div class="circle-card">
                             <img class="img-fluid" src="./images/circle_outline.png">
                             <div class="circle-card-img bg-meroon"></div>
@@ -478,47 +595,54 @@ activities the school offered, useful and meaningful. ”</quote></div>
                                 <p class="circle-card-text-secondary">AUG</p>
                             </div>
                         </div>
-                        <div class="event-details ml-4 mt-3">
+                        <div class="event-details">
                             <h1 class="section-title-sub txt-dark">Math Party</h1>
-                            <p class="timing"><i class="fa fa-clock-o mr-2 txt-blue-tweet"></i>Starting <span class="txt-blue-tweet ml-2">10:00AM</span></p>
+                            <p class="timing"><i class="fa fa-clock-o mr-2 txt-blue-tweet"></i>Starting <span
+                                    class="txt-blue-tweet ml-2">10:00AM</span></p>
                         </div>
                     </div>
                     <!-- event end -->
                 </div>
-                <div class="col-md-7 news">
+                <div class="col-lg-7 news">
                     <h1 class="section-title">RECENT NEWS</h1>
-                    <hr class="w-25 dashed-line">
-                    <div class="row mb-2 event">
-                        <div class="col">
-                            <img class="img-fluid rounded" src="./images/300x200.jpg" alt="">
+                    <hr class="w-50 dashed-line">
+                    <div class="row event-news">
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="./images/img_300x200_2.jpg" alt="">
                         </div>
-                        <div class="col event-details mt-3">
+                        <div class="col-sm-6 event-details mt-1">
                             <h1 class="section-title-sub txt-dark">Activities improves mind</h1>
                             <hr class="dotted-line">
                             <p class="timing"><i class="fa fa-calendar mr-2"></i>August 22, 2016</p>
-                            <p class="details">Lorem ipsum dolor sit amet, malesuada arcu dui amet sociis libero in, velit consequat fusce, a arcu odio ipsum congue sit purus, tempus cras sed justo vel arcu.</p>
+                            <p class="details">Lorem ipsum dolor sit amet, malesuada arcu dui amet sociis libero in,
+                                velit consequat fusce, a arcu odio ipsum congue sit purus, tempus cras sed justo vel
+                                arcu.</p>
                         </div>
                     </div>
-                    <div class="row mb-2 event">
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./images/300x200.jpg" alt="">
+                    <div class="row event-news">
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="./images/img_300x200_1.jpg" alt="">
                         </div>
-                        <div class="col-6 event-details mt-3">
+                        <div class="col-sm-6 event-details mt-1">
                             <h1 class="section-title-sub txt-dark">Back to school</h1>
                             <hr class="dotted-line">
                             <p class="timing"><i class="fa fa-calendar mr-2"></i>August 22, 2016</p>
-                            <p class="details">Lorem ipsum dolor sit amet, malesuada arcu dui amet sociis libero in, velit consequat fusce, a arcu odio ipsum congue sit purus, tempus cras sed justo vel arcu.</p>
+                            <p class="details">Lorem ipsum dolor sit amet, malesuada arcu dui amet sociis libero in,
+                                velit consequat fusce, a arcu odio ipsum congue sit purus, tempus cras sed justo vel
+                                arcu.</p>
                         </div>
                     </div>
-                    <div class="row mb-2 event">
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./images/300x200.jpg" alt="">
+                    <div class="row event-news">
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded" src="./images/img_300x200_3.jpg" alt="">
                         </div>
-                        <div class="col-6 event-details mt-3">
+                        <div class="col-sm-6 event-details mt-1">
                             <h1 class="section-title-sub txt-dark">Kids to listen daily</h1>
                             <hr class="dotted-line">
                             <p class="timing"><i class="fa fa-calendar mr-2"></i>August 22, 2016</p>
-                            <p class="details">Lorem ipsum dolor sit amet, malesuada arcu dui amet sociis libero in, velit consequat fusce, a arcu odio ipsum congue sit purus, tempus cras sed justo vel arcu.</p>
+                            <p class="details">Lorem ipsum dolor sit amet, malesuada arcu dui amet sociis libero in,
+                                velit consequat fusce, a arcu odio ipsum congue sit purus, tempus cras sed justo vel
+                                arcu.</p>
                         </div>
                     </div>
                 </div>
@@ -529,38 +653,43 @@ activities the school offered, useful and meaningful. ”</quote></div>
     <section>
         <div class="contacts-cloud-edge"></div>
         <div class="contacts bg-white">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6 contact">
                         <div>
                             <img class="img-fluid" src="./images/logo_education.png">
                         </div>
                         <div class="contacts-content">
                             <p>Giraffe is a wonderland for Kids to learn, play, and grow naturally and creatively. </p>
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-arrow-right mr-1 txt-blue-tweet"></i>Advanced Educational Programs</li>
+                                <li><i class="fa fa-arrow-right mr-1 txt-blue-tweet"></i>Advanced Educational Programs
+                                </li>
                                 <li><i class="fa fa-arrow-right mr-1 txt-blue-tweet"></i>Creativity & Thinking</li>
                                 <li><i class="fa fa-arrow-right mr-1 txt-blue-tweet"></i>Yoga & Swimming</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6 contact">
                         <h1 class="section-title-sub txt-yellow">INSTAGRAM</h1>
                         <hr class="w-50 dotted-line border-yellow">
                         <div class="contacts-content">
                             <div class="row mb-4">
-                                <div class="col-md-4"><img class="img-fluid" src="./images/80x80.jpg"></div>
-                                <div class="col-md-4"><img class="img-fluid" src="./images/80x80.jpg"></div>
-                                <div class="col-md-4"><img class="img-fluid" src="./images/80x80.jpg"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4"><img class="img-fluid" src="./images/80x80.jpg"></div>
-                                <div class="col-md-4"><img class="img-fluid" src="./images/80x80.jpg"></div>
-                                <div class="col-md-4"><img class="img-fluid" src="./images/80x80.jpg"></div>
+                                <div class="col-md-4 col-3 mb-4"><img class="img-fluid"
+                                        src="./images/photo160x160_thumb1.jpg"></div>
+                                <div class="col-md-4 col-3"><img class="img-fluid"
+                                        src="./images/photo160x160x_thumb2.jpg"></div>
+                                <div class="col-md-4 col-3"><img class="img-fluid"
+                                        src="./images/photo160x160x_thumb3.jpg"></div>
+                                <div class="col-md-4 col-3"><img class="img-fluid"
+                                        src="./images/photo160x160x_thumb4.jpg"></div>
+                                <div class="col-md-4 col-3"><img class="img-fluid"
+                                        src="./images/photo160x160x_thumb5.jpg"></div>
+                                <div class="col-md-4 col-3"><img class="img-fluid"
+                                        src="./images/photo160x160x_thumb6.jpg"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6 contact">
                         <h1 class="section-title-sub txt-green">CONTACT US</h1>
                         <hr class="w-50 dotted-line border-green">
                         <div class="contacts-content">
@@ -571,18 +700,20 @@ activities the school offered, useful and meaningful. ”</quote></div>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6 contact">
                         <h1 class="section-title-sub txt-meroon">NEWSLETTER</h1>
                         <hr class="w-50 dotted-line border-meroon">
                         <div class="contacts-content">
                             <p>Get latest updates, news, survays & offers</p>
                             <div>
-                                <form class="input-group">
-                                    <input type="email">
-                                    <button type="submit"><i class="fa fa-mail-reply"></i>
-                                </form>  
+                                <form class="input-group" action="javascript:void(0)">
+                                    <div>
+                                        <input type="email">
+                                        <button type="submit"><i class="fa fa-share"></i>
+                                    </div>
+                                </form>
                             </div>
-                            <div>
+                            <div class="socials">
                                 <i class="fa fa-facebook mr-2"></i>
                                 <i class="fa fa-twitter mr-2"></i>
                                 <i class="fa fa-pinterest mr-2"></i>
@@ -590,7 +721,7 @@ activities the school offered, useful and meaningful. ”</quote></div>
                                 <i class="fa fa-vimeo mr-2"></i>
                                 <i class="fa fa-rss mr-2"></i>
                             </div>
-                        </div>            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -598,7 +729,7 @@ activities the school offered, useful and meaningful. ”</quote></div>
     </section>
 
     <footer class="bg-yellow">
-        <div class="container">
+        <div class="container-fluid">
             <ul class="list-unstyled nav-bottom">
                 <li><a href="">Home</a></li>
                 <li>|</li>
