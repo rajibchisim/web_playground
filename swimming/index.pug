@@ -1,0 +1,199 @@
+doctype
+html(lang="en")
+    head
+        //- Required meta tags
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap")
+        //- Bootstrap CSS
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
+        //- custom css
+        link(rel="stylesheet", href="./css/style.css")
+
+        title Swimming School
+    body
+        header.container-fluid
+            div.slider-container(style="position: relative;")
+                div(id="carouselExampleControls" class="carousel slide" data-ride="carousel")
+                    div(class="carousel-inner").slider-wrapper
+                        div(class="carousel-item active")
+                            img(class="d-block img-fluid" src="./images/slider-img-1.jpg" alt="First slide")
+                        div(class="carousel-item")
+                            img(class="d-block img-fluid" src="./images/slider-img-1.jpg" alt="Second slide")
+                        div(class="carousel-item")
+                            img(class="d-block img-fluid" src="./images/slider-img-1.jpg" alt="Third slide")
+
+                    a(class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev")
+                        span(class="carousel-control-prev-icon" aria-hidden="true" style="margin-top: -220px")
+                            span(class="sr-only") Previous
+                    a(class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next")
+                        span(class="carousel-control-next-icon" aria-hidden="true" style="margin-top: -220px")
+                            span(class="sr-only") Next
+                            
+            //- Main navigation
+            .main-nav
+                .container
+                    nav.navbar.navbar-expand-md(style="align-items: stretch; padding: 0")
+                        a.navbar-brand(href="#" style="display: inline-flex; align-items: center")
+                            span.logo-img
+                                img.img-fluid(src="./images/logo.png", alt="logo")
+                            span.logo-name Swimming<br>School
+                            
+                        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation")
+                            span
+                                img(src="./images/menu.svg", alt="menu-button", style="width: 36px")
+                        //- 
+                        div.collapse.navbar-collapse.mobile-link-collapse(id="navbarNavAltMarkup")
+                            a.nav-item.nav-link.active.mobile-link(href="#") Home
+                            a.nav-item.nav-link.active.mobile-link(href="#") About
+                            a.nav-item.nav-link.active.mobile-link(href="#") Feature
+                            a.nav-item.nav-link.active.mobile-link(href="#") Gallery
+                            a.nav-item.nav-link.active.mobile-link(href="#") Contact
+
+                        div.collapse.navbar-collapse(style="align-items: stretch; justify-content: flex-end")
+                            div.navbar-nav(style="align-items: stretch;")
+                                a.nav-item.nav-link.main-nav-link.active(href="#") Home
+                                    span.normal-state Home
+                                    span.hover-state Home
+                                a.nav-item.nav-link.main-nav-link.active(href="#") About
+                                    span.normal-state About
+                                    span.hover-state About
+                                a.nav-item.nav-link.main-nav-link.active(href="#") Feature
+                                    span.normal-state Feature
+                                    span.hover-state Feature
+                                a.nav-item.nav-link.main-nav-link.active(href="#") Gallery
+                                    span.normal-state Gallery
+                                    span.hover-state Gallery
+                                a.nav-item.nav-link.main-nav-link.active(href="#") Contact
+                                    span.normal-state Contact
+                                    span.hover-state Contact
+
+        //- Welcome section
+        section.container.welcome
+            div.row
+                div.col-md-6(style="margin-top: 16px;")
+                    h1.title Welcome to our school!
+                    p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+
+        //- Steps
+        div.steps-section-abs
+            .container-fluid
+                section.container
+                    div.box-container
+                        div.box.bg-yellow.box-1
+                            div.box-label
+                                h2.number.txt-yellow 1
+                            div.box-content
+                                h1.text-white.title Register for swim lessons
+                                p.body It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                        div.box.bg-orange.box-2
+                            div.box-label
+                                h2.number.txt-orange 2
+                            div.box-content
+                                h1.text-white.title Franchise Opportunities
+                                p.body It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                        div.col-md-6.box.bg-green.box-3
+                            div.box-label
+                                h2.number.txt-green 3
+                            div.box-content
+                                h1.text-white.title What level is My Child?
+                                p.body It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+        
+        //- Special bg section 1
+        section.container-fluid
+            .special-bg.bg-1
+                .container
+                    .row
+                        .col-12.d-block.d-md-none
+                            img(src="./images/feature-1.jpg", alt="feature 1").img-fluid
+                        .col-12.offset-md-6.col-md-6.offset-lg-7.col-lg-5
+                            div.post-readmore.padd-l-for-bg
+                                h1.title Swimming lesson for adults and children
+                                p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                                a(href="").bt.bt-more Read more
+
+        //- Feature posts
+        section.container
+            .row
+                .col-md-6
+                    div.post-readmore
+                        h1.title Warm water, small classes, happy lessons!
+                        p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-
+                        a(href="").bt.bt-more Read more
+                .col-md-6
+                    div.post-readmore
+                        h1.title Swimming is a skill for life!
+                        p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-
+                        a(href="").bt.bt-more Read more
+
+
+        //- Special bg section 2
+        section.container-fluid
+            .special-bg.bg-2
+                .container
+                    .row
+                        .col-12.d-block.d-md-none
+                            img(src="./images/feature-2.jpg", alt="feature 2").img-fluid
+                        .col-md-5
+                            div.post-readmore
+                                h1.title Our services and events
+                                p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                                a(href="").bt.bt-more Read more
+
+        //- Clients testimonial
+        section.testimonial.container
+            .row
+                .col-md-4
+                    .testimony
+                        img(src="./images/person_1.jpg", alt="person 1").img-fluid.testimony-img
+                        h4.testimony-title Testimony 1
+                        p.testimony-text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                .col-md-4
+                    .testimony
+                        img(src="./images/person_2.jpg", alt="person 2").img-fluid.testimony-img
+                        h4.testimony-title Testimony 2
+                        p.testimony-text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                .col-md-4
+                    .testimony
+                        img(src="./images/person_4.jpg", alt="person 3").img-fluid.testimony-img
+                        h4.testimony-title Testimony 3
+                        p.testimony-text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+
+        //- Site footer
+        footer.container.contact
+            .row
+                .col-md-6
+                    .map
+                        img(src="./images/map.jpg", alt="map").img-fluid
+                .col-md-6
+                    .contact-info
+                        h1.title Locate a Swim School
+                        p Address: 1/1 localstreat
+                        p 800 2345-6789
+                        p Email: info@swimschool.com
+                        .socials
+                            i
+                                svg.social-icon
+                                    use(xlink:href="./images/social-icon.svg#facebook")
+                            i
+                                svg.social-icon
+                                    use(xlink:href="./images/social-icon.svg#instagram")
+                            i
+                                svg.social-icon
+                                    use(xlink:href="./images/social-icon.svg#twitter")
+                            i
+                                svg.social-icon
+                                    use(xlink:href="./images/social-icon.svg#linkedin")
+                            i
+                                svg.social-icon
+                                    use(xlink:href="./images/social-icon.svg#pinterest")
+                        p.copyright Copyright@ info
+
+        //- Optional JavaScript
+        //- jQuery first, then Popper.js, then Bootstrap JS
+        script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js", integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js", integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", crossorigin="anonymous")
+        //- script(src="./js/script.js")
+    //- Body end
